@@ -2,8 +2,10 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Enemy
+  - Flame
   layers:
   - Default
   - TransparentFX
@@ -11,11 +13,11 @@ TagManager:
   - 
   - Water
   - UI
+  - Ground
+  - Climbing
+  - Enemy
   - 
-  - 
-  - 
-  - 
-  - 
+  - Player
   - 
   - 
   - 
@@ -41,3 +43,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3142906817
+    locked: 0
+  - name: Tile
+    uniqueID: 3039039973
+    locked: 0
+  - name: Prop
+    uniqueID: 3070602739
+    locked: 0
+  - name: Climbing
+    uniqueID: 1247936213
+    locked: 0
+  - name: Player
+    uniqueID: 4181540447
+    locked: 0
+  - name: Enemy
+    uniqueID: 1886849047
+    locked: 0
+  m_RenderingLayers:
+  - Default
