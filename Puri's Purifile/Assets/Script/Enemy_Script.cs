@@ -154,26 +154,32 @@ void AttackPlayer()
     {
         // Set the trigger and shoot only when ready to fire
         myAnimator.SetTrigger("Shoot"); 
-        Debug.Log("Shoot animation triggered at " + Time.time);
-        Shoot(directionToPlayer);
+        ShootProjectile();
         nextFireTime = Time.time + fireRate;
     }
     
     
 }
-void Shoot(float direction)
+// Change this:
+// void Shoot(float direction) { ... }
+
+// To this:
+public void ShootProjectile() // 👈 IMPORTANT: Must be public for Animation Events
 {
-    
-    // Create the projectile slightly in front of the enemy
+    ;
+    // 1. Get the direction *just before* spawning the projectile
+    float direction = Mathf.Sign(player.position.x - transform.position.x);
+
+    // 2. Create the projectile slightly in front of the enemy
     Vector3 spawnPosition = transform.position + new Vector3(direction * 0.5f, 0, 0); 
     
-    // Instantiate and get reference
+    // 3. Instantiate and get reference
     GameObject projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
     
-    // Get the Rigidbody2D of the projectile
+    // 4. Get the Rigidbody2D of the projectile
     Rigidbody2D projRb = projectile.GetComponent<Rigidbody2D>();
     
-    // Set the velocity to move in the direction the enemy is facing
+    // 5. Set the velocity
     projRb.velocity = new Vector2(direction * projectileSpeed, 0f);
 }
 
