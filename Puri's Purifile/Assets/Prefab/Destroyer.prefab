@@ -192,6 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff643cd48cae3b438a37be2dbdba6da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  lives: 3
   currentState: 0
   moveSpeed: 3
   patrolDistance: 5
@@ -202,5 +203,5 @@ MonoBehaviour:
   chaseRange: 8
   attackRange: 5
   projectilePrefab: {fileID: 834826121323900232, guid: 1bad5a4bf2f855c40a8040ea27c32955, type: 3}
-  projectileSpeed: 10
-  fireRate: 2
+  projectileSpeed: 5
+  fireRate: 3
