@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8086865502379442299}
   - component: {fileID: 6964618169384428745}
   m_Layer: 0
-  m_Name: TileSet_house_interior_v_1.0_48
+  m_Name: Door_StagePass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

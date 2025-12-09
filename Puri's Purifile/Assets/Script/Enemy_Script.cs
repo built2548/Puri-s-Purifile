@@ -5,6 +5,11 @@ public class Enemy_Script : MonoBehaviour
 {
 public enum EnemyState { Patrol, Chase, Attack }
 
+[Header("Enemy Stats")]
+[SerializeField] int lives = 3;
+private bool isDead = false;
+public int Lives { get { return lives; } }
+
 [Header("State Control")]
 public EnemyState currentState = EnemyState.Patrol;
 
@@ -23,7 +28,11 @@ private float patrolDirection = 1f; // 1 for right, -1 for left
 [SerializeField] float projectileSpeed = 10f;
 [SerializeField] float fireRate = 2f;
 private float nextFireTime;
+private float dyingTime = 2.0f; // Time before enemy is destroyed after death animation
+
+
 Animator myAnimator;
+CapsuleCollider2D myCapsule;
 // References
 private Rigidbody2D rb;
 private Transform player; // Set this in Start or through a Find call
@@ -32,6 +41,7 @@ private Transform player; // Set this in Start or through a Find call
 void Start()
 {
     rb = GetComponent<Rigidbody2D>();
+    myCapsule = GetComponent<CapsuleCollider2D>();
     startPosition = transform.position;
     // Find the player object
     player = GameObject.FindGameObjectWithTag("Player").transform; 
@@ -191,4 +201,46 @@ void FlipSprite(float direction)
         transform.localScale = new Vector3(Mathf.Sign(direction) * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
     }
 }
+// 💥 NEW: Damage System 💥
+
+/// <summary>
+/// Reduces enemy lives by the damage amount and triggers death if lives <= 0.
+/// </summary>
+/// <param name="damageAmount">The amount of damage taken (e.g., 1 for a standard bullet).</param>
+public void TakeDamage(int damageAmount)
+{
+    lives -= damageAmount;
+    Debug.Log($"Enemy took {damageAmount} damage. Lives remaining: {lives}");
+
+    
+    myAnimator.SetTrigger("Hurt");
+    
+
+    if (lives <= 0)
+    {
+        Die();
+    }
+}
+
+/// <summary>
+/// Handles the enemy's destruction or death sequence.
+/// </summary>
+private void Die()
+{
+    isDead = true; 
+    Debug.Log("Enemy destroyed!");
+    // Animation
+    myAnimator.SetBool("isWalking", false);
+    myAnimator.ResetTrigger("Shoot");
+    myAnimator.SetTrigger("Dead");
+    myCapsule.offset = new Vector2(0f, 0.7f); // Adjust collider offset
+    // Physics & Script Control
+    rb.velocity = Vector2.zero;
+    // Disabling the component prevents Update/FixedUpdate from running.
+    this.enabled = false; 
+
+    // Destroy the enemy object after a short delay (e.g., 2 seconds, 5 seconds might be too long)
+    Destroy(gameObject, dyingTime); // Changed delay to 2.0f for a faster test, adjust as needed.
+}
+
 }

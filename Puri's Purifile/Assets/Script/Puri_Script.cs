@@ -12,6 +12,14 @@ public class Puri_Script : MonoBehaviour
     [SerializeField] float invulnerableDuration = 1.5f; 
     private bool isInvulnerable = false; // 💡 NEW: Flag to block damage
 
+    // ⭐ NEW: Shooting Fields
+    [Header("Shooting")]
+    [SerializeField] GameObject projectilePrefab; // Assign the bullet prefab in the Inspector
+    [SerializeField] float projectileSpeed = 15f;
+    [SerializeField] float fireRate = 0.5f; // Time between shots
+    private float nextFireTime;
+    // ⭐ END NEW
+
     [Header("Movement")]
     [SerializeField] float runspeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
@@ -113,22 +121,59 @@ public class Puri_Script : MonoBehaviour
         myAnimator.SetBool("isClimbing", playerHasVerticalSpeed);
     }
     
-    void OnAttack(InputValue value)
+void OnAttack(InputValue value)
     {
         if (!isAlive) { return; }
 
         if (value.isPressed)
         {
-            myAnimator.SetTrigger("Attack"); 
+            if (Time.time >= nextFireTime) // Check fire rate
+            {
+                myAnimator.SetTrigger("Attack"); 
+                Shoot(); // ⭐ CALL THE NEW SHOOT FUNCTION
+                nextFireTime = Time.time + fireRate; // Reset fire time
+            }
         }
     }
+    
+void Shoot()
+{
+    if (projectilePrefab == null)
+    {
+        Debug.LogError("Projectile Prefab is not assigned to the Player script!");
+        return;
+    }
+
+    // 1. Calculate the direction (1 for right, -1 for left)
+    float direction = transform.localScale.x / Mathf.Abs(transform.localScale.x);
+
+    // 2. Calculate the spawn position
+    Vector3 spawnPosition = transform.position + new Vector3(direction * 0.5f, 0, 0); 
+    
+    // 3. Instantiate the bullet
+    GameObject projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
+    
+    // ⭐ 4. PASS THE DIRECTION AND FLIP THE BULLET
+    PlayerProjectile projScript = projectile.GetComponent<PlayerProjectile>();
+    if (projScript != null)
+    {
+        projScript.Initialize(direction); // Call the new Initialize method
+    }
+    
+    // 5. Give it velocity (Unchanged)
+    Rigidbody2D projRb = projectile.GetComponent<Rigidbody2D>();
+    if (projRb != null)
+    {
+        projRb.velocity = new Vector2(direction * projectileSpeed, 0f);
+    }
+}
 
     // --- LIVES AND DEATH LOGIC ---
 
     void CheckForDeath()
     {
         // 💡 ONLY CALL TakeDamage IF NOT INVULNERABLE
-        if (!isInvulnerable && myCapsule.IsTouchingLayers(LayerMask.GetMask("Enemy", "Flame")))
+        if (!isInvulnerable && myCapsule.IsTouchingLayers(LayerMask.GetMask("Flame")))
         {
             TakeDamage();
         }
@@ -141,6 +186,8 @@ public class Puri_Script : MonoBehaviour
         // 1. Reduce a life
         lives--;
         Debug.Log("Player hit! Lives remaining: " + lives);
+
+
 
         // 2. Start the temporary invulnerability period
         StartCoroutine(BecomeTemporarilyInvulnerable());
@@ -169,6 +216,7 @@ public class Puri_Script : MonoBehaviour
         float elapsed = 0f;
         while (elapsed < invulnerableDuration)
         {
+            
             spriteRenderer.enabled = !spriteRenderer.enabled;
             yield return new WaitForSeconds(flashInterval);
             elapsed += flashInterval;
