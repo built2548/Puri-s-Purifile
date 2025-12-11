@@ -50,7 +50,7 @@ public class Puri_Script : MonoBehaviour
     {
         if (!isAlive) { return; }
 
-        if (myCapsule.IsTouchingLayers(LayerMask.GetMask("Ground", "Climbing")) && Mathf.Abs(myRigidbody.linearVelocity.y) <= Mathf.Epsilon)
+        if (myCapsule.IsTouchingLayers(LayerMask.GetMask("Ground", "Climbing", "MovingPlatform")) && Mathf.Abs(myRigidbody.linearVelocity.y) <= Mathf.Epsilon)
         {
             myAnimator.SetBool("isJumping", false);
         }
@@ -71,7 +71,7 @@ public class Puri_Script : MonoBehaviour
     void OnJump(InputValue value)
     {
         if (!isAlive) { return; }
-        if (!myCapsule.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        if (!myCapsule.IsTouchingLayers(LayerMask.GetMask("Ground", "MovingPlatform")))
         {
             return;
         }

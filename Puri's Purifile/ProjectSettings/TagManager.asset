@@ -17,7 +17,7 @@ TagManager:
   - Ground
   - Climbing
   - Enemy
-  - 
+  - MovingPlatform
   - Player
   - 
   - 
@@ -62,11 +62,11 @@ TagManager:
   - name: Enemy
     uniqueID: 1886849047
     locked: 0
-  - name: Bullet
-    uniqueID: 3796844851
-    locked: 0
   - name: Object
     uniqueID: 2789075819
+    locked: 0
+  - name: Bullet
+    uniqueID: 3796844851
     locked: 0
   m_RenderingLayers:
   - Default
