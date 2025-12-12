@@ -47,6 +47,21 @@ TagManager:
   - name: Background
     uniqueID: 3142906817
     locked: 0
+  - name: 1Sky
+    uniqueID: 2562249297
+    locked: 0
+  - name: 2Star
+    uniqueID: 3416367379
+    locked: 0
+  - name: 3Cloud
+    uniqueID: 3809009933
+    locked: 0
+  - name: 4Background
+    uniqueID: 2986297021
+    locked: 0
+  - name: 5Forground
+    uniqueID: 2802039481
+    locked: 0
   - name: Tile
     uniqueID: 3039039973
     locked: 0
