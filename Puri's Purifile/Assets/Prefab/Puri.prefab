@@ -82,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -113426849
-  m_SortingLayer: 5
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 4723107735738678597, guid: 74e811f0c6dbe1f499b509af6410b06f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -135,7 +135,7 @@ MonoBehaviour:
   projectileSpeed: 10
   fireRate: 0.5
   runspeed: 5
-  jumpSpeed: 5
+  jumpSpeed: 5.5
   climbSpeed: 5
   deathkick: {x: 5, y: 5}
 --- !u!70 &7160731217441052224

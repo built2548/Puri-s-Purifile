@@ -1,246 +1,246 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+
 public class Enemy_Script : MonoBehaviour
 {
-public enum EnemyState { Patrol, Chase, Attack }
+    public enum EnemyState { Patrol, Chase, Attack }
 
-[Header("Enemy Stats")]
-[SerializeField] int lives = 3;
-private bool isDead = false;
-public int Lives { get { return lives; } }
+    [Header("Enemy Stats")]
+    [SerializeField] int lives = 3;
+    private bool isDead = false;
+    public int Lives { get { return lives; } }
 
-[Header("State Control")]
-public EnemyState currentState = EnemyState.Patrol;
+    [Header("State Control")]
+    public EnemyState currentState = EnemyState.Patrol;
 
-[Header("Movement")]
-[SerializeField] float moveSpeed = 3f;
-[SerializeField] float patrolDistance = 5f;
-private Vector3 startPosition;
-private float patrolDirection = 1f; // 1 for right, -1 for left
+    [Header("Movement")]
+    [SerializeField] float moveSpeed = 3f;
+    [SerializeField] float patrolDistance = 5f;
+    private Vector3 startPosition;
+    private float patrolDirection = 1f; // 1 for right, -1 for left
 
-[Header("Detection & Attack")]
-[SerializeField] float verticalTolerance = 3f; // Max height difference the enemy will tolerate
-[SerializeField] LayerMask obstructionLayer; // Layer that blocks line of sight (e.g., "Ground")
-[SerializeField] float chaseRange = 8f; // Distance at which enemy starts chasing
-[SerializeField] float attackRange = 5f; // Distance at which enemy stops and attacks
-[SerializeField] GameObject projectilePrefab;
-[SerializeField] float projectileSpeed = 10f;
-[SerializeField] float fireRate = 2f;
-private float nextFireTime;
-private float dyingTime = 2.0f; // Time before enemy is destroyed after death animation
+    [Header("Detection & Attack")]
+    [SerializeField] float verticalTolerance = 3f; // Max height difference the enemy will tolerate
+    [SerializeField] LayerMask obstructionLayer; // Layer that blocks line of sight (e.g., "Ground")
+    [SerializeField] float chaseRange = 8f; // Distance at which enemy starts chasing
+    [SerializeField] float attackRange = 5f; // Distance at which enemy stops and attacks
+    [SerializeField] GameObject projectilePrefab;
+    [SerializeField] float projectileSpeed = 10f;
+    [SerializeField] float fireRate = 2f;
+    private float nextFireTime;
+    private float dyingTime = 2.0f; // Time before enemy is destroyed after death animation
 
 
-Animator myAnimator;
-CapsuleCollider2D myCapsule;
-// References
-private Rigidbody2D rb;
-private Transform player; // Set this in Start or through a Find call
-// private bool enteredAttackState = false; // Flag is no longer needed
+    Animator myAnimator;
+    CapsuleCollider2D myCapsule;
+    // References
+    private Rigidbody2D rb;
+    private Transform player; 
 
-void Start()
-{
-    rb = GetComponent<Rigidbody2D>();
-    myCapsule = GetComponent<CapsuleCollider2D>();
-    startPosition = transform.position;
-    // Find the player object
-    player = GameObject.FindGameObjectWithTag("Player").transform; 
-    nextFireTime = Time.time;
-    myAnimator = GetComponent<Animator>();
-}
-
-void Update()
-{
-    if (player == null) return; 
-
-    float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-    float verticalDifference = Mathf.Abs(transform.position.y - player.position.y);
-
-    // --- LINE OF SIGHT CHECK ---
-    bool hasLineOfSight = !Physics2D.Raycast(
-        transform.position, 
-        player.position - transform.position, 
-        distanceToPlayer, 
-        obstructionLayer
-    );
-    
-    // --- STATE SWITCHING LOGIC ---
-    // Save the previous state to check for a transition
-    EnemyState previousState = currentState;
-    
-    if (verticalDifference <= verticalTolerance && hasLineOfSight)
+    void Start()
     {
-        if (distanceToPlayer <= attackRange)
+        rb = GetComponent<Rigidbody2D>();
+        myCapsule = GetComponent<CapsuleCollider2D>();
+        startPosition = transform.position;
+        // Find the player object
+        player = GameObject.FindGameObjectWithTag("Player").transform; 
+        nextFireTime = Time.time;
+        myAnimator = GetComponent<Animator>();
+    }
+
+    void Update()
+    {
+        if (player == null) return; 
+
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+        float verticalDifference = Mathf.Abs(transform.position.y - player.position.y);
+
+        // --- LINE OF SIGHT CHECK ---
+        bool hasLineOfSight = !Physics2D.Raycast(
+            transform.position, 
+            player.position - transform.position, 
+            distanceToPlayer, 
+            obstructionLayer
+        );
+        
+        // --- STATE SWITCHING LOGIC ---
+        // Save the previous state to check for a transition
+        EnemyState previousState = currentState;
+        
+        if (verticalDifference <= verticalTolerance && hasLineOfSight)
         {
-            currentState = EnemyState.Attack;
-        }
-        else if (distanceToPlayer <= chaseRange)
-        {
-            currentState = EnemyState.Chase;
+            if (distanceToPlayer <= attackRange)
+            {
+                currentState = EnemyState.Attack;
+            }
+            else if (distanceToPlayer <= chaseRange)
+            {
+                currentState = EnemyState.Chase;
+            }
+            else
+            {
+                currentState = EnemyState.Patrol;
+            }
         }
         else
         {
             currentState = EnemyState.Patrol;
         }
+
+
+        // *** Cooldown reset logic REMOVED for stability ***
+        if (previousState != EnemyState.Attack && currentState == EnemyState.Attack)
+        {
+            // Do not reset nextFireTime here to respect fire rate
+        }
+        
+
+
+        // --- Execute Current State (switch block) ---
+        switch (currentState)
+        {
+            case EnemyState.Patrol:
+                Patrol();
+                break;
+            case EnemyState.Chase:
+                ChasePlayer();
+                break;
+            case EnemyState.Attack:
+                AttackPlayer();
+                break;
+        }
+
     }
-    else
+
+    void Patrol()
     {
-        currentState = EnemyState.Patrol;
+        // 1. Move
+        rb.velocity = new Vector2(moveSpeed * patrolDirection, rb.velocity.y);
+
+        // 2. Flip Direction (when boundaries are hit)
+        float currentX = transform.position.x;
+        
+        // Check if the enemy is too far left or right of the starting point
+        if (currentX > startPosition.x + patrolDistance)
+        {
+            patrolDirection = -1f; // Move Left
+        }
+        else if (currentX < startPosition.x - patrolDistance)
+        {
+            patrolDirection = 1f; // Move Right
+        }
+
+        // 3. Flip Sprite (Visual)
+        FlipSprite(patrolDirection); 
+        myAnimator.SetBool("isWalking", true);
     }
 
-    // *** FIX 1: Only reset nextFireTime if we've just entered the Attack state. ***
-    // This makes sure the enemy can fire immediately upon seeing the player,
-    // but only on the first frame of entering the state.
-    if (previousState != EnemyState.Attack && currentState == EnemyState.Attack)
+    void ChasePlayer()
     {
-        nextFireTime = 0f;
+        // Determine direction to player
+        float directionToPlayer = Mathf.Sign(player.position.x - transform.position.x);
+        
+        // Move
+        rb.velocity = new Vector2(moveSpeed * directionToPlayer, rb.velocity.y);
+        
+        // Flip Sprite
+        FlipSprite(directionToPlayer);
+        
+        // Animate
+        myAnimator.SetBool("isWalking", true);
     }
 
-
-    // --- Execute Current State (switch block) ---
-    switch (currentState)
+    void AttackPlayer()
     {
-        case EnemyState.Patrol:
-            Patrol();
-            break;
-        case EnemyState.Chase:
-            ChasePlayer();
-            break;
-        case EnemyState.Attack:
-            AttackPlayer();
-            break;
-    }
-}
-void Patrol()
-{
-    // 1. Move
-    rb.velocity = new Vector2(moveSpeed * patrolDirection, rb.velocity.y);
+        // 1. Stop Movement
+        rb.velocity = new Vector2(0f, rb.velocity.y);
+        
+        // 2. Stop walking animation
+        myAnimator.SetBool("isWalking", false);
 
-    // 2. Flip Direction (when boundaries are hit)
-    float currentX = transform.position.x;
-    
-    // Check if the enemy is too far left or right of the starting point
-    if (currentX > startPosition.x + patrolDistance)
+        // 3. Face Player Direction
+        float directionToPlayer = Mathf.Sign(player.position.x - transform.position.x);
+        FlipSprite(directionToPlayer); 
+        
+        // 4. Attack (Shoot)
+        if (Time.time >= nextFireTime)
+        {
+            // Set the trigger and shoot only when ready to fire
+            myAnimator.SetTrigger("Shoot"); 
+            ShootProjectile();
+            nextFireTime = Time.time + fireRate;
+        }
+    }
+
+    public void ShootProjectile() 
     {
-        patrolDirection = -1f; // Move Left
+        // 1. Get the direction *just before* spawning the projectile
+        float direction = Mathf.Sign(player.position.x - transform.position.x);
+
+        // 2. Create the projectile slightly in front of the enemy
+        Vector3 spawnPosition = transform.position + new Vector3(direction * 0.5f, 0, 0); 
+        
+        // 3. Instantiate and get reference
+        GameObject projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
+        
+        // 4. Get the Rigidbody2D of the projectile
+        Rigidbody2D projRb = projectile.GetComponent<Rigidbody2D>();
+        // Adjust projectile scale based on direction
+        Vector3 currentScale = projectile.transform.localScale;
+        projectile.transform.localScale = new Vector3(
+            Mathf.Sign(direction) * Mathf.Abs(currentScale.x), 
+            currentScale.y, 
+            currentScale.z
+        );
+        
+        // 5. Set the velocity
+        projRb.velocity = new Vector2(direction * projectileSpeed, 0f);
     }
-    else if (currentX < startPosition.x - patrolDistance)
+
+    void FlipSprite(float direction)
     {
-        patrolDirection = 1f; // Move Right
+        // Flips the sprite based on the sign of the direction
+        if (Mathf.Abs(direction) > 0)
+        {
+            transform.localScale = new Vector3(Mathf.Sign(direction) * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
     }
 
-    // 3. Flip Sprite (Visual)
-    FlipSprite(patrolDirection); 
-    myAnimator.SetBool("isWalking", true);
-}
-void ChasePlayer()
-{
-    // Determine direction to player
-    float directionToPlayer = Mathf.Sign(player.position.x - transform.position.x);
-    
-    // Move
-    rb.velocity = new Vector2(moveSpeed * directionToPlayer, rb.velocity.y);
-    
-    // Flip Sprite
-    FlipSprite(directionToPlayer);
-    
-    // Animate
-    myAnimator.SetBool("isWalking", true);
-}
-void AttackPlayer()
-{
-// 1. Stop Movement
-    rb.velocity = new Vector2(0f, rb.velocity.y);
-    
-    // 2. Stop walking animation
-    myAnimator.SetBool("isWalking", false);
-
-    // 3. Face Player Direction
-    float directionToPlayer = Mathf.Sign(player.position.x - transform.position.x);
-    FlipSprite(directionToPlayer); 
-    
-    // 4. Attack (Shoot)
-    if (Time.time >= nextFireTime) // *** FIX 2: Use >= for consistency/safety, though > works. ***
+    /// <summary>
+    /// Reduces enemy lives by the damage amount and triggers death if lives <= 0.
+    /// </summary>
+    public void TakeDamage(int damageAmount)
     {
-        // Set the trigger and shoot only when ready to fire
-        myAnimator.SetTrigger("Shoot"); 
-        ShootProjectile();
-        nextFireTime = Time.time + fireRate;
+        lives -= damageAmount;
+        Debug.Log($"Enemy took {damageAmount} damage. Lives remaining: {lives}");
+
+        myAnimator.SetTrigger("Hurt");
+        
+        if (lives <= 0)
+        {
+            Die();
+        }
     }
-    
-    
-}
-// Change this:
-// void Shoot(float direction) { ... }
 
-// To this:
-public void ShootProjectile() // 👈 IMPORTANT: Must be public for Animation Events
-{
-    ;
-    // 1. Get the direction *just before* spawning the projectile
-    float direction = Mathf.Sign(player.position.x - transform.position.x);
-
-    // 2. Create the projectile slightly in front of the enemy
-    Vector3 spawnPosition = transform.position + new Vector3(direction * 0.5f, 0, 0); 
-    
-    // 3. Instantiate and get reference
-    GameObject projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
-    
-    // 4. Get the Rigidbody2D of the projectile
-    Rigidbody2D projRb = projectile.GetComponent<Rigidbody2D>();
-    
-    // 5. Set the velocity
-    projRb.velocity = new Vector2(direction * projectileSpeed, 0f);
-}
-
-void FlipSprite(float direction)
-{
-    // Flips the sprite based on the sign of the direction
-    if (Mathf.Abs(direction) > 0)
+    /// <summary>
+    /// Handles the enemy's destruction or death sequence.
+    /// </summary>
+    private void Die()
     {
-        transform.localScale = new Vector3(Mathf.Sign(direction) * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        isDead = true; 
+        Debug.Log("Enemy destroyed!");
+        // Animation
+        myAnimator.SetBool("isWalking", false);
+        myAnimator.ResetTrigger("Shoot");
+        myAnimator.SetTrigger("Dead");
+        myCapsule.offset = new Vector2(0f, 0.7f); // Adjust collider offset
+        // Physics & Script Control
+        rb.velocity = Vector2.zero;
+        // Disabling the component prevents Update/FixedUpdate from running.
+        this.enabled = false; 
+
+        // Destroy the enemy object after a short delay
+        Destroy(gameObject, dyingTime); 
     }
-}
-// 💥 NEW: Damage System 💥
-
-/// <summary>
-/// Reduces enemy lives by the damage amount and triggers death if lives <= 0.
-/// </summary>
-/// <param name="damageAmount">The amount of damage taken (e.g., 1 for a standard bullet).</param>
-public void TakeDamage(int damageAmount)
-{
-    lives -= damageAmount;
-    Debug.Log($"Enemy took {damageAmount} damage. Lives remaining: {lives}");
-
-    
-    myAnimator.SetTrigger("Hurt");
-    
-
-    if (lives <= 0)
-    {
-        Die();
-    }
-}
-
-/// <summary>
-/// Handles the enemy's destruction or death sequence.
-/// </summary>
-private void Die()
-{
-    isDead = true; 
-    Debug.Log("Enemy destroyed!");
-    // Animation
-    myAnimator.SetBool("isWalking", false);
-    myAnimator.ResetTrigger("Shoot");
-    myAnimator.SetTrigger("Dead");
-    myCapsule.offset = new Vector2(0f, 0.7f); // Adjust collider offset
-    // Physics & Script Control
-    rb.velocity = Vector2.zero;
-    // Disabling the component prevents Update/FixedUpdate from running.
-    this.enabled = false; 
-
-    // Destroy the enemy object after a short delay (e.g., 2 seconds, 5 seconds might be too long)
-    Destroy(gameObject, dyingTime); // Changed delay to 2.0f for a faster test, adjust as needed.
-}
-
 }

@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using FirstGearGames.SmoothCameraShaker;
 
 public class Puri_Script : MonoBehaviour
 {
+    
     [Header("Player Stats")]
     [SerializeField] int lives = 3;
     public int Lives { get { return lives; } } 
@@ -34,7 +36,7 @@ public class Puri_Script : MonoBehaviour
     CapsuleCollider2D myCapsule;
     float gravityScaleAtStart;
     bool isAlive = true;
-    
+    public ShakeData smallShake;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -187,7 +189,7 @@ void Shoot()
         lives--;
         Debug.Log("Player hit! Lives remaining: " + lives);
 
-
+        CameraShakerHandler.Shake(smallShake);
 
         // 2. Start the temporary invulnerability period
         StartCoroutine(BecomeTemporarilyInvulnerable());

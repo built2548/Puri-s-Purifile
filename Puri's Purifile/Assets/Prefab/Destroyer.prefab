@@ -80,8 +80,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1886849047
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_Sprite: {fileID: 4723107735738678597, guid: 0fee9ac0608daeb4a9993caa5416fe0d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -177,8 +177,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.068570435}
-  m_Size: {x: 0.95, y: 1.8128592}
+  m_Offset: {x: 0.005666733, y: 0.028897762}
+  m_Size: {x: 0.666626, y: 1.4614727}
   m_Direction: 0
 --- !u!114 &1239524188100572488
 MonoBehaviour:
@@ -203,5 +203,5 @@ MonoBehaviour:
   chaseRange: 8
   attackRange: 5
   projectilePrefab: {fileID: 834826121323900232, guid: 1bad5a4bf2f855c40a8040ea27c32955, type: 3}
-  projectileSpeed: 5
+  projectileSpeed: 3
   fireRate: 3
