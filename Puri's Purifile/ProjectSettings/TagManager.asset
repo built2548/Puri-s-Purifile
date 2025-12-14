@@ -62,6 +62,9 @@ TagManager:
   - name: 5Forground
     uniqueID: 2802039481
     locked: 0
+  - name: Wallpaper
+    uniqueID: 3155023187
+    locked: 0
   - name: Tile
     uniqueID: 3039039973
     locked: 0

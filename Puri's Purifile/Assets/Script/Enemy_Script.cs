@@ -212,6 +212,7 @@ public class Enemy_Script : MonoBehaviour
     /// </summary>
     public void TakeDamage(int damageAmount)
     {
+        if (isDead) return; // Ignore damage if already dead
         lives -= damageAmount;
         Debug.Log($"Enemy took {damageAmount} damage. Lives remaining: {lives}");
 
@@ -229,6 +230,7 @@ public class Enemy_Script : MonoBehaviour
     private void Die()
     {
         isDead = true; 
+        myAnimator.ResetTrigger("Hurt");// Clear hurt trigger if it was set
         Debug.Log("Enemy destroyed!");
         // Animation
         myAnimator.SetBool("isWalking", false);

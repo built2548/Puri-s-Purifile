@@ -6849,7 +6849,7 @@ GameObject:
   - component: {fileID: 7008727005731172428}
   - component: {fileID: 9207521779156651641}
   m_Layer: 0
-  m_Name: New Tile Palette
+  m_Name: HousePlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

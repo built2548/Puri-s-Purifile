@@ -2826,9 +2826,9 @@ TextureImporter:
       name: TileSet_house_interior_v_1.0_101
       rect:
         serializedVersion: 2
-        x: 79
+        x: 145
         y: 223
-        width: 162
+        width: 96
         height: 102
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -3724,6 +3724,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_142
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 271
+        width: 63
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77dacd4b1b2bb2148a4d4e1692743c08
+      internalID: 1557403835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -3787,6 +3809,7 @@ TextureImporter:
       TileSet_house_interior_v_1.0_14: 8526320803344911311
       TileSet_house_interior_v_1.0_140: -2125383016441665552
       TileSet_house_interior_v_1.0_141: -4900579684005915132
+      TileSet_house_interior_v_1.0_142: 1557403835
       TileSet_house_interior_v_1.0_15: 1500099881297232758
       TileSet_house_interior_v_1.0_16: 3732767847493252975
       TileSet_house_interior_v_1.0_17: -4376089620295442714
