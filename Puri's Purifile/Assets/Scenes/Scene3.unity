@@ -1271,63 +1271,6 @@ MonoBehaviour:
   _limitMagnitude: 0
   _positionalMagnitudeLimit: 10
   _rotationalMagnitudeLimit: 3
---- !u!1001 &548873242
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 459135847705298683, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_Name
-      value: Infantryman (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.597575
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.40441
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
 --- !u!1 &611034011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,63 +1378,6 @@ Transform:
   - {fileID: 1788764941}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &699237120
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 459135847705298683, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_Name
-      value: Infantryman (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.540715
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.531826
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
 --- !u!4 &751285065 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 476102933907647209, guid: c70ee1a4353f0e74aa6496e3e2daa5d1, type: 3}
@@ -2358,63 +2244,6 @@ MonoBehaviour:
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
   FollowOffset: {x: 0, y: 0, z: -10}
---- !u!1001 &1259572973
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2668281696808467333, guid: d9f3ae724a914fa44a9844464504f5ec, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5.3631983
-      objectReference: {fileID: 0}
-    - target: {fileID: 2668281696808467333, guid: d9f3ae724a914fa44a9844464504f5ec, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.6046352
-      objectReference: {fileID: 0}
-    - target: {fileID: 2668281696808467333, guid: d9f3ae724a914fa44a9844464504f5ec, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2668281696808467333, guid: d9f3ae724a914fa44a9844464504f5ec, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2668281696808467333, guid: d9f3ae724a914fa44a9844464504f5ec, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2668281696808467333, guid: d9f3ae724a914fa44a9844464504f5ec, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2668281696808467333, guid: d9f3ae724a914fa44a9844464504f5ec, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2668281696808467333, guid: d9f3ae724a914fa44a9844464504f5ec, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2668281696808467333, guid: d9f3ae724a914fa44a9844464504f5ec, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2668281696808467333, guid: d9f3ae724a914fa44a9844464504f5ec, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5381242255762840151, guid: d9f3ae724a914fa44a9844464504f5ec, type: 3}
-      propertyPath: m_Name
-      value: Destroyer
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d9f3ae724a914fa44a9844464504f5ec, type: 3}
 --- !u!1 &1275090789
 GameObject:
   m_ObjectHideFlags: 0
@@ -3238,6 +3067,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Infantryman
       objectReference: {fileID: 0}
+    - target: {fileID: 3576266903303965375, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3576266903303965375, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.855606
@@ -3294,6 +3131,14 @@ PrefabInstance:
     - target: {fileID: 459135847705298683, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
       propertyPath: m_Name
       value: Infantryman (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3576266903303965375, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3576266903303965375, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7179431198722918682, guid: ac2eb475d0f86d24d9bd82217af3827f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9964,6 +9809,3 @@ SceneRoots:
   - {fileID: 1978749733}
   - {fileID: 213341846}
   - {fileID: 418885106}
-  - {fileID: 699237120}
-  - {fileID: 548873242}
-  - {fileID: 1259572973}

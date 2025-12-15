@@ -11,33 +11,37 @@ public class HeartDisplayManager : MonoBehaviour
     [Header("Sprites")]
     // Drag your Full Heart Sprite here
     [SerializeField] private Sprite fullHeartSprite; 
-    // Drag your Empty Heart Sprite here
-    [SerializeField] private Sprite emptyHeartSprite; 
+    
+    // NOTE: The 'emptyHeartSprite' is removed as requested.
 
     // Public method called by the player script when health changes
     public void UpdateHealthDisplay(int currentLives)
     {
         // Safety check to ensure we have images and sprites assigned
-        if (heartImages == null || heartImages.Count == 0 || fullHeartSprite == null || emptyHeartSprite == null)
+        if (heartImages == null || heartImages.Count == 0 || fullHeartSprite == null)
         {
-            Debug.LogError("Heart Display Manager is missing references in the Inspector!");
+            Debug.LogError("Heart Display Manager is missing references in the Inspector (heartImages or fullHeartSprite)!");
             return;
         }
 
         // Loop through all heart images
         for (int i = 0; i < heartImages.Count; i++)
         {
-            // If the heart's index (i) is less than the current lives, it's a full heart.
-            // Since lists are 0-indexed, index 0 is life 1, index 1 is life 2, etc.
+            // Safety check for the specific heart image
+            if (heartImages[i] == null) continue;
+
+            // If the heart's index (i) is less than the current lives, it's a full heart and should be VISIBLE.
             if (i < currentLives)
             {
-                // Heart is full (Lives > Index)
+                // Ensure the heart has the correct sprite and is visible/active
                 heartImages[i].sprite = fullHeartSprite;
+                heartImages[i].enabled = true; // Use 'enabled = true' to show the Image component
             }
             else
             {
-                // Heart is empty (Lives <= Index)
-                heartImages[i].sprite = emptyHeartSprite;
+                // Heart is lost (Lives <= Index) and should be HIDDEN.
+                // We simply disable the Image component, which is cleaner than setting the sprite to null.
+                heartImages[i].enabled = false; 
             }
         }
     }
