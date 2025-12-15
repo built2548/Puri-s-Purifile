@@ -19,7 +19,7 @@ TagManager:
   - Enemy
   - MovingPlatform
   - Player
-  - 
+  - Flame
   - 
   - 
   - 
@@ -85,6 +85,9 @@ TagManager:
     locked: 0
   - name: Bullet
     uniqueID: 3796844851
+    locked: 0
+  - name: UI
+    uniqueID: 58280007
     locked: 0
   m_RenderingLayers:
   - Default
