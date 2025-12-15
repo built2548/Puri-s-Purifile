@@ -1,15 +1,20 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class Enemy_Script : MonoBehaviour
 {
     public enum EnemyState { Patrol, Chase, Attack }
 
     [Header("Enemy Stats")]
-    [SerializeField] int Maxlives = 3;
+    [SerializeField] int lives = 3;
     private bool isDead = false;
-    public int Lives { get { return lives; } }
+
+    // Public getter for the current lives
+    public int Lives { get { return lives; } } 
+    // Public getter for the max lives (used for the health bar's ratio calculation)
+    public int MaxLives { get; private set; } // Auto-property to store the initial max lives
 
     [Header("State Control")]
     public EnemyState currentState = EnemyState.Patrol;
@@ -29,9 +34,10 @@ public class Enemy_Script : MonoBehaviour
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] float fireRate = 2f;
 
-    [SerializeField] HealthBar healthBar;
+    // This will be found in Awake()
+    private HealthBar healthBar; 
     private float nextFireTime;
-    private float dyingTime = 2.0f; // Time before enemy is destroyed after death animation
+    private float dyingTime = 2.0f; 
 
 
     Animator myAnimator;
@@ -42,11 +48,21 @@ public class Enemy_Script : MonoBehaviour
 
     private void Awake()
     {
+        // Store the initial lives count as the MaxLives
+        MaxLives = lives; 
+        // GetComponentInChildren will find the HealthBar script on a child object
         healthBar = GetComponentInChildren<HealthBar>();
     }
-    void Start()
+ void Start()
     {
-        healthBar.UpdateHealthBar(Lives, Maxlives);
+        // --- HEALTH BAR INITIALIZATION ---
+        // Display full health at the start of the game
+        if (healthBar != null)
+        {
+            healthBar.UpdateHealthBar(Lives, MaxLives);
+        }
+        // ---------------------------------
+        
         rb = GetComponent<Rigidbody2D>();
         myCapsule = GetComponent<CapsuleCollider2D>();
         startPosition = transform.position;
@@ -54,6 +70,8 @@ public class Enemy_Script : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform; 
         nextFireTime = Time.time;
         myAnimator = GetComponent<Animator>();
+
+        // IMPORTANT: If any of the GetComponent calls return null, the script will eventually fail.
     }
 
     void Update()
@@ -217,12 +235,18 @@ public class Enemy_Script : MonoBehaviour
     /// <summary>
     /// Reduces enemy lives by the damage amount and triggers death if lives <= 0.
     /// </summary>
-    public void TakeDamage(int damageAmount)
+public void TakeDamage(int damageAmount)
     {
         if (isDead) return; // Ignore damage if already dead
         lives -= damageAmount;
         Debug.Log($"Enemy took {damageAmount} damage. Lives remaining: {lives}");
-        healthBar.UpdateHealthBar(Lives, Maxlives);
+
+        // --- HEALTH BAR UPDATE ---
+        if (healthBar != null)
+        {
+            healthBar.UpdateHealthBar(Lives, MaxLives);
+        }
+        // -------------------------
 
         myAnimator.SetTrigger("Hurt");
         
@@ -235,11 +259,18 @@ public class Enemy_Script : MonoBehaviour
     /// <summary>
     /// Handles the enemy's destruction or death sequence.
     /// </summary>
-    private void Die()
+private void Die()
     {
         isDead = true; 
-        myAnimator.ResetTrigger("Hurt");// Clear hurt trigger if it was set
+        myAnimator.ResetTrigger("Hurt");
         Debug.Log("Enemy destroyed!");
+        
+        // Hide/Clear Health Bar on death
+        if (healthBar != null)
+        {
+            healthBar.UpdateHealthBar(0, MaxLives);
+        }
+        
         // Animation
         myAnimator.SetBool("isWalking", false);
         myAnimator.ResetTrigger("Shoot");
@@ -247,10 +278,8 @@ public class Enemy_Script : MonoBehaviour
         myCapsule.offset = new Vector2(0f, 0.7f); // Adjust collider offset
         // Physics & Script Control
         rb.velocity = Vector2.zero;
-        // Disabling the component prevents Update/FixedUpdate from running.
         this.enabled = false; 
 
-        // Destroy the enemy object after a short delay
         Destroy(gameObject, dyingTime); 
     }
 }

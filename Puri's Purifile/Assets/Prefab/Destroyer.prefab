@@ -109,8 +109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 5.0599937, y: 0}
-  m_SizeDelta: {x: 20.12, y: 0}
+  m_AnchoredPosition: {x: 3.79, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4465153422520625274
 CanvasRenderer:
@@ -160,6 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5537397645899671562}
   - component: {fileID: 5975467731423089147}
+  - component: {fileID: 8420261201039399325}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -231,7 +232,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 2741213137361375278}
   m_HandleRect: {fileID: 0}
-  m_Direction: 0
+  m_Direction: 1
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
@@ -239,6 +240,22 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8420261201039399325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2643382219439695502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4843fd26f035f8346bdc4718b75d9bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthBar
+  camera: {fileID: 5450487428565521849, guid: 8372566f00ed0284693640dcc8fa165a, type: 3}
+  target: {fileID: 2668281696808467333}
+  slider: {fileID: 5975467731423089147}
+  offset: {x: 0, y: 1, z: 0}
 --- !u!1 &3496651910288818436
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +562,7 @@ MonoBehaviour:
   chaseRange: 8
   attackRange: 5
   projectilePrefab: {fileID: 834826121323900232, guid: 1bad5a4bf2f855c40a8040ea27c32955, type: 3}
-  projectileSpeed: 3
+  projectileSpeed: 5
   fireRate: 3
 --- !u!1 &5523902508608662728
 GameObject:
@@ -580,6 +597,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: -3.64, y: 0}
+  m_SizeDelta: {x: -0.84, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

@@ -6,6 +6,8 @@ using FirstGearGames.SmoothCameraShaker;
 
 public class Puri_Script : MonoBehaviour
 {
+    [Header("UI")]
+    [SerializeField] HeartDisplayManager heartDisplayManager;
     
     [Header("Player Stats")]
     [SerializeField] int lives = 3;
@@ -45,6 +47,12 @@ public class Puri_Script : MonoBehaviour
       myAnimator = GetComponent<Animator>();
       myCapsule = GetComponent<CapsuleCollider2D>();
       gravityScaleAtStart = myRigidbody.gravityScale; 
+      // ⭐ NEW: Initialize the health display on start (show 3 hearts)
+      if (heartDisplayManager != null)
+      {
+          heartDisplayManager.UpdateHealthDisplay(lives);
+      }
+      // ⭐ END NEW
     }
 
     // Update is called once per frame
@@ -193,7 +201,13 @@ void Shoot()
 
         // 2. Start the temporary invulnerability period
         StartCoroutine(BecomeTemporarilyInvulnerable());
-
+        // ⭐ NEW: Update the Heart UI immediately after reducing lives
+        if (heartDisplayManager != null)
+        {
+            heartDisplayManager.UpdateHealthDisplay(lives);
+        }
+        // ⭐ END NEW
+        
         // 3. Check for game over
         if (lives <= 0)
         {
