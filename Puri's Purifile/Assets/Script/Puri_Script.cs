@@ -7,8 +7,9 @@ using FirstGearGames.SmoothCameraShaker;
 public class Puri_Script : MonoBehaviour
 {
     [Header("UI")]
-    [SerializeField] HeartDisplayManager heartDisplayManager;
-    
+    [Header("Ground Check")]
+    [SerializeField] float groundCheckDistance = 0.1f;
+    [SerializeField] LayerMask whatIsGround;
     [Header("Player Stats")]
     [SerializeField] int lives = 3;
     public int Lives { get { return lives; } } 
@@ -40,6 +41,18 @@ public class Puri_Script : MonoBehaviour
     bool isAlive = true;
     public ShakeData smallShake;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private HeartDisplayManager heartDisplayManager; 
+
+    void Awake()
+    {
+    // If the HeartPanel is a permanent object in the scene:
+    heartDisplayManager = FindObjectOfType<HeartDisplayManager>(); 
+    
+    if (heartDisplayManager == null)
+    {
+        Debug.LogError("HeartDisplayManager not found in the scene! Ensure the HeartPanel prefab is instantiated.");
+    }
+    }
     void Start()
     {
       myRigidbody = GetComponent<Rigidbody2D>();  
@@ -77,13 +90,26 @@ public class Puri_Script : MonoBehaviour
         if (!isAlive) { return; }
         moveInput = value.Get<Vector2>();
     }
+    bool IsGrounded()
+{
+    // Check below the player's bottom edge for the ground layers
+    // Adjust the origin and size based on your player's collider setup (using raycast is simpler)
     
+    // Raycast straight down from the center bottom of the collider:
+    Vector2 raycastOrigin = myCapsule.bounds.center + Vector3.down * myCapsule.size.y / 2f;
+    RaycastHit2D hit = Physics2D.Raycast(raycastOrigin, Vector2.down, groundCheckDistance, whatIsGround);
+    
+    // Optional: Draw a debug line to visualize the check in the Scene View
+    Debug.DrawRay(raycastOrigin, Vector2.down * groundCheckDistance, hit.collider != null ? Color.green : Color.red);
+    
+    return hit.collider != null;
+}
     void OnJump(InputValue value)
     {
         if (!isAlive) { return; }
-        if (!myCapsule.IsTouchingLayers(LayerMask.GetMask("Ground", "MovingPlatform")))
+        if (!IsGrounded()) 
         {
-            return;
+        return; 
         }
         if (value.isPressed )
         {
