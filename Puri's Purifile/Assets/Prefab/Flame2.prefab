@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4887520619832244548}
   - component: {fileID: 255397376486703853}
   - component: {fileID: 5958787982557591634}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Flame2
   m_TagString: Flame
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1886849047
-  m_SortingLayer: 6
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: -8019520384315703443, guid: de80097e64ea51c45926c972c42397cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -144,7 +144,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

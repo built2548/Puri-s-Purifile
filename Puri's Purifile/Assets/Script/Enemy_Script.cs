@@ -7,7 +7,7 @@ public class Enemy_Script : MonoBehaviour
     public enum EnemyState { Patrol, Chase, Attack }
 
     [Header("Enemy Stats")]
-    [SerializeField] int lives = 3;
+    [SerializeField] int Maxlives = 3;
     private bool isDead = false;
     public int Lives { get { return lives; } }
 
@@ -28,6 +28,8 @@ public class Enemy_Script : MonoBehaviour
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] float fireRate = 2f;
+
+    [SerializeField] HealthBar healthBar;
     private float nextFireTime;
     private float dyingTime = 2.0f; // Time before enemy is destroyed after death animation
 
@@ -38,8 +40,13 @@ public class Enemy_Script : MonoBehaviour
     private Rigidbody2D rb;
     private Transform player; 
 
+    private void Awake()
+    {
+        healthBar = GetComponentInChildren<HealthBar>();
+    }
     void Start()
     {
+        healthBar.UpdateHealthBar(Lives, Maxlives);
         rb = GetComponent<Rigidbody2D>();
         myCapsule = GetComponent<CapsuleCollider2D>();
         startPosition = transform.position;
@@ -215,6 +222,7 @@ public class Enemy_Script : MonoBehaviour
         if (isDead) return; // Ignore damage if already dead
         lives -= damageAmount;
         Debug.Log($"Enemy took {damageAmount} damage. Lives remaining: {lives}");
+        healthBar.UpdateHealthBar(Lives, Maxlives);
 
         myAnimator.SetTrigger("Hurt");
         
