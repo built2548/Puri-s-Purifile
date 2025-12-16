@@ -554,12 +554,13 @@ MonoBehaviour:
   lives: 3
   currentState: 0
   moveSpeed: 3
-  patrolDistance: 5
-  verticalTolerance: 3
+  patrolDistance: 3
+  wallCheckDistance: 0.5
+  verticalTolerance: 1
   obstructionLayer:
     serializedVersion: 2
-    m_Bits: 0
-  chaseRange: 8
+    m_Bits: 64
+  chaseRange: 6
   attackRange: 5
   projectilePrefab: {fileID: 834826121323900232, guid: 1bad5a4bf2f855c40a8040ea27c32955, type: 3}
   projectileSpeed: 5
