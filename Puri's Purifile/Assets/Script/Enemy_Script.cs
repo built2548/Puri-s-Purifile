@@ -7,6 +7,8 @@ public class Enemy_Script : MonoBehaviour
 {
     public enum EnemyState { Patrol, Chase, Attack }
 
+    
+
     [Header("Enemy Stats")]
     [SerializeField] int lives = 3;
     private bool isDead = false;
@@ -24,6 +26,7 @@ public class Enemy_Script : MonoBehaviour
     [SerializeField] float patrolDistance = 5f;
     private Vector3 startPosition;
     private float patrolDirection = 1f; // 1 for right, -1 for left
+    [SerializeField] float wallCheckDistance = 0.5f; // Distance to look for a wall
 
     [Header("Detection & Attack")]
     [SerializeField] float verticalTolerance = 3f; // Max height difference the enemy will tolerate
@@ -138,29 +141,44 @@ public class Enemy_Script : MonoBehaviour
 
     }
 
-    void Patrol()
+void Patrol()
+{
+    // 1. WALL DETECTION
+    // Create a Raycast looking ahead based on the current patrol direction
+    Vector2 rayOrigin = transform.position;
+    Vector2 rayDirection = new Vector2(patrolDirection, 0);
+    
+    RaycastHit2D wallHit = Physics2D.Raycast(rayOrigin, rayDirection, wallCheckDistance, obstructionLayer);
+
+    // DEBUG: Shows the wall check ray in the Scene view (Green if clear, Red if hit)
+    Debug.DrawRay(rayOrigin, rayDirection * wallCheckDistance, wallHit.collider != null ? Color.red : Color.green);
+
+    // 2. FLIP DIRECTION (Wall Hit OR Boundary Reached)
+    float currentX = transform.position.x;
+
+    if (wallHit.collider != null)
     {
-        // 1. Move
-        rb.velocity = new Vector2(moveSpeed * patrolDirection, rb.velocity.y);
-
-        // 2. Flip Direction (when boundaries are hit)
-        float currentX = transform.position.x;
-        
-        // Check if the enemy is too far left or right of the starting point
-        if (currentX > startPosition.x + patrolDistance)
-        {
-            patrolDirection = -1f; // Move Left
-        }
-        else if (currentX < startPosition.x - patrolDistance)
-        {
-            patrolDirection = 1f; // Move Right
-        }
-
-        // 3. Flip Sprite (Visual)
-        FlipSprite(patrolDirection); 
-        myAnimator.SetBool("isWalking", true);
+        // Hit a wall! Turn around immediately
+        patrolDirection *= -1f;
+        // Optional: Move startPosition to current spot to reset patrol distance logic
+        startPosition.x = transform.position.x; 
+    }
+    else if (currentX > startPosition.x + patrolDistance)
+    {
+        patrolDirection = -1f; // Move Left
+    }
+    else if (currentX < startPosition.x - patrolDistance)
+    {
+        patrolDirection = 1f; // Move Right
     }
 
+    // 3. APPLY MOVEMENT
+    rb.velocity = new Vector2(moveSpeed * patrolDirection, rb.velocity.y);
+
+    // 4. VISUALS
+    FlipSprite(patrolDirection); 
+    myAnimator.SetBool("isWalking", true);
+}
     void ChasePlayer()
     {
         // Determine direction to player
