@@ -1704,12 +1704,12 @@ TextureImporter:
       name: TileSet_house_interior_v_1.0_50
       rect:
         serializedVersion: 2
-        x: 281
-        y: 703
-        width: 24
-        height: 59
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 282
+        y: 707
+        width: 22
+        height: 34
+      alignment: 9
+      pivot: {x: 0.95, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1727,9 +1727,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 314
-        y: 703
+        y: 704
         width: 7
-        height: 59
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2430,10 +2430,10 @@ TextureImporter:
       name: TileSet_house_interior_v_1.0_83
       rect:
         serializedVersion: 2
-        x: 143
-        y: 559
-        width: 66
-        height: 33
+        x: 145
+        y: 560
+        width: 15
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2540,10 +2540,10 @@ TextureImporter:
       name: TileSet_house_interior_v_1.0_88
       rect:
         serializedVersion: 2
-        x: 175
-        y: 511
-        width: 50
-        height: 31
+        x: 176
+        y: 512
+        width: 49
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2826,10 +2826,10 @@ TextureImporter:
       name: TileSet_house_interior_v_1.0_101
       rect:
         serializedVersion: 2
-        x: 145
-        y: 223
-        width: 96
-        height: 102
+        x: 150
+        y: 224
+        width: 84
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3746,6 +3746,72 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_143
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 753
+        width: 5
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43cdc6682b218c4f9b60ea3376c4c5e
+      internalID: -1315152564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_144
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 560
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d350ff3a3cb5047a58270d482df78f
+      internalID: 419356151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_145
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 560
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f066a1f90a8f144087830292bc9fe58
+      internalID: 1363995530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -3810,6 +3876,9 @@ TextureImporter:
       TileSet_house_interior_v_1.0_140: -2125383016441665552
       TileSet_house_interior_v_1.0_141: -4900579684005915132
       TileSet_house_interior_v_1.0_142: 1557403835
+      TileSet_house_interior_v_1.0_143: -1315152564
+      TileSet_house_interior_v_1.0_144: 419356151
+      TileSet_house_interior_v_1.0_145: 1363995530
       TileSet_house_interior_v_1.0_15: 1500099881297232758
       TileSet_house_interior_v_1.0_16: 3732767847493252975
       TileSet_house_interior_v_1.0_17: -4376089620295442714
