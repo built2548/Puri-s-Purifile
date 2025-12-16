@@ -48,6 +48,8 @@ public class Enemy_Script : MonoBehaviour
     // References
     private Rigidbody2D rb;
     private Transform player; 
+    AudioManager audioManager;
+
 
     private void Awake()
     {
@@ -55,6 +57,7 @@ public class Enemy_Script : MonoBehaviour
         MaxLives = lives; 
         // GetComponentInChildren will find the HealthBar script on a child object
         healthBar = GetComponentInChildren<HealthBar>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
  void Start()
     {
@@ -129,12 +132,15 @@ public class Enemy_Script : MonoBehaviour
         switch (currentState)
         {
             case EnemyState.Patrol:
+            
                 Patrol();
                 break;
             case EnemyState.Chase:
+            audioManager.PlaySFX(audioManager.alienChasing);
                 ChasePlayer();
                 break;
             case EnemyState.Attack:
+            audioManager.PlaySFX(audioManager.laser);
                 AttackPlayer();
                 break;
         }
@@ -213,11 +219,13 @@ void Patrol()
             myAnimator.SetTrigger("Shoot"); 
             ShootProjectile();
             nextFireTime = Time.time + fireRate;
+            
         }
     }
 
     public void ShootProjectile() 
     {
+        
         // 1. Get the direction *just before* spawning the projectile
         float direction = Mathf.Sign(player.position.x - transform.position.x);
 
@@ -239,6 +247,7 @@ void Patrol()
         
         // 5. Set the velocity
         projRb.velocity = new Vector2(direction * projectileSpeed, 0f);
+        
     }
 
     void FlipSprite(float direction)
@@ -258,6 +267,7 @@ public void TakeDamage(int damageAmount)
         if (isDead) return; // Ignore damage if already dead
         lives -= damageAmount;
         Debug.Log($"Enemy took {damageAmount} damage. Lives remaining: {lives}");
+        audioManager.PlaySFX(audioManager.alienHit);
 
         // --- HEALTH BAR UPDATE ---
         if (healthBar != null)
@@ -286,6 +296,7 @@ private void Die()
         // Hide/Clear Health Bar on death
         if (healthBar != null)
         {
+            audioManager.PlaySFX(audioManager.alienDeath);
             healthBar.UpdateHealthBar(0, MaxLives);
         }
         
