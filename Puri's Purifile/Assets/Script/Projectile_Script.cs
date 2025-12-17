@@ -41,5 +41,9 @@ public class Projectile_Script : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
+        else if (other.gameObject.tag == "Wall")
+        {
+            Destroy(gameObject);
+        }
     }
 }
