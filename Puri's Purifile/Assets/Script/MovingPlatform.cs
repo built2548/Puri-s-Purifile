@@ -6,7 +6,8 @@ public class MovingPlatform : MonoBehaviour
 {
     public Transform posA, posB;
     public float speed;
-    
+     [Header("Audio Settings")]
+     [SerializeField] private AudioSource ElevatorSource;
     // ⭐ NEW: Duration of the pause at each end.
     [SerializeField] float pauseDuration = 0.5f; 
     
@@ -29,6 +30,10 @@ public class MovingPlatform : MonoBehaviour
         // This loop runs continuously while the component is active
         while (true) 
         {
+            if (ElevatorSource != null && !ElevatorSource.isPlaying)
+            {
+                ElevatorSource.Play();
+            }
             // 1. Move to the target (A or B)
             while (Vector3.Distance(transform.position, targetPos) > 0.05f)
             {

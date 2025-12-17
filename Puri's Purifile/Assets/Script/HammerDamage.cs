@@ -2,45 +2,44 @@ using UnityEngine;
 
 public class HammerDamage : MonoBehaviour
 {
-    AudioManager audioManager;
+    [Header("Audio Settings")]
+    // ⭐ NEW: Drag a child GameObject with an AudioSource here
+    [SerializeField] private AudioSource smashSource; 
+
+    [Header("Hammer Settings")]
     [SerializeField] int damageAmount = 1; 
-    
-    // ⭐ NEW REFERENCE: Drag the Child Damage Zone's Collider here in the Inspector
     [SerializeField] Collider2D damageCollider; 
 
-    // --- Methods called by Animation Events ---
     private void Awake()
     {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        // We no longer need to find the AudioManager tag!
+        // The sound is now handled by the smashSource reference.
     }
+
     public void EnableDamage()
     {
-        // Now enables the collider reference we assigned in the Inspector
         if (damageCollider != null)
         {
              damageCollider.enabled = true;
-             audioManager.PlaySFX(audioManager.smash);
+
+             // ⭐ NEW: Play the local smash sound
+             if (smashSource != null)
+             {
+                 // Randomize pitch slightly for a better "heavy" feel
+                 smashSource.pitch = Random.Range(0.85f, 1.15f);
+                 smashSource.Play();
+             }
+
              Debug.Log("Hammer Damage ENABLED.");
-
-
         }
     }
     
     public void DisableDamage()
     {
-        // Now disables the collider reference we assigned in the Inspector
         if (damageCollider != null)
         {
              damageCollider.enabled = false;
              Debug.Log("Hammer Damage DISABLED.");
         }
     }
-    
-    // ⭐ IMPORTANT: This OnTriggerEnter2D method MUST be moved back 
-    // to the Child Damage Zone script/object if you want the trigger detection 
-    // to work there, OR you can keep it here if the main hammer has the trigger collider.
-    // However, since the *Child* is the trigger, you need a small script *there* too.
-    
-    // This script should ONLY handle the enable/disable functions.
-    // The actual collision detection should stay on the Child Damage Zone.
 }

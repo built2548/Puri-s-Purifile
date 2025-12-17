@@ -64,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 35
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -102,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -208,12 +208,12 @@ TextureImporter:
       name: Gas_start_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 45
-        width: 15
-        height: 27
+        x: 0
+        y: 0
+        width: 72
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -230,12 +230,12 @@ TextureImporter:
       name: Gas_start_1
       rect:
         serializedVersion: 2
-        x: 97
-        y: 34
-        width: 19
-        height: 38
+        x: 72
+        y: 0
+        width: 72
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -252,12 +252,12 @@ TextureImporter:
       name: Gas_start_2
       rect:
         serializedVersion: 2
-        x: 167
-        y: 22
-        width: 26
-        height: 50
+        x: 144
+        y: 0
+        width: 72
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -274,12 +274,12 @@ TextureImporter:
       name: Gas_start_3
       rect:
         serializedVersion: 2
-        x: 236
-        y: 10
-        width: 36
-        height: 62
+        x: 216
+        y: 0
+        width: 72
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -296,12 +296,12 @@ TextureImporter:
       name: Gas_start_4
       rect:
         serializedVersion: 2
-        x: 297
+        x: 288
         y: 0
-        width: 46
+        width: 72
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -320,10 +320,10 @@ TextureImporter:
         serializedVersion: 2
         x: 360
         y: 0
-        width: 57
+        width: 72
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -340,12 +340,12 @@ TextureImporter:
       name: Gas_start_6
       rect:
         serializedVersion: 2
-        x: 431
+        x: 432
         y: 0
-        width: 63
+        width: 72
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -362,12 +362,12 @@ TextureImporter:
       name: Gas_start_7
       rect:
         serializedVersion: 2
-        x: 513
+        x: 504
         y: 0
-        width: 62
+        width: 72
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -380,55 +380,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Gas_start_8
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 0
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ad23dce4c601713e0800000000000000
-      internalID: -2083178245270981926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Gas_start_9
-      rect:
-        serializedVersion: 2
-        x: 509
-        y: 0
-        width: 10
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d5821942780d8c700800000000000000
-      internalID: 560927432460281949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e5e51ddb963b1f14aa565837eb4989fe
     internalID: 0
     vertices: []
     indices: 
@@ -436,7 +392,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":72.0,"y":72.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Gas_start_0: -7407435489780553262
       Gas_start_1: 2602718051526642221
@@ -446,8 +404,6 @@ TextureImporter:
       Gas_start_5: -6923691946968574388
       Gas_start_6: 3063975745649135869
       Gas_start_7: -4246740165508334120
-      Gas_start_8: -2083178245270981926
-      Gas_start_9: 560927432460281949
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

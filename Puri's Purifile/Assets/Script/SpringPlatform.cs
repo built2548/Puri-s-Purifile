@@ -4,9 +4,9 @@ public class SpringPlatform : MonoBehaviour
 {
     // Adjust this value in the Inspector to control jump height
     [SerializeField] float launchForce = 20f; 
-    
-    // Optional: Add a reference to the Animator component if the spring animates
-    [SerializeField] Animator springAnimator;
+    [Header("Audio Child References")]
+    [SerializeField] private AudioSource JumpPad;
+
 
     // Use a private variable to store the player's Rigidbody, 
     // so we can apply the force directly.
@@ -23,11 +23,8 @@ public class SpringPlatform : MonoBehaviour
 
             if (playerRb != null)
             {
-                // 3. Optional: Play the spring compression/launch animation
-                if (springAnimator != null)
-                {
-                    springAnimator.SetTrigger("Launch"); 
-                }
+
+                if (JumpPad != null) JumpPad.Play();
 
                 // 4. Reset the player's vertical velocity to ensure a consistent jump
                 playerRb.velocity = new Vector2(playerRb.velocity.x, 0f);
