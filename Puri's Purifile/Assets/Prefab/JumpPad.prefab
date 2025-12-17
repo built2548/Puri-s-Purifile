@@ -81,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1505891477
-  m_SortingLayer: 12
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_Sprite: {fileID: 2695397407002535339, guid: 8cdfa5613ffacf244ba9fd553dfc1b3b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d43b0a8ebcfa83498be928ef2a51be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  launchForce: 10
+  launchForce: 9
   springAnimator: {fileID: 0}
 --- !u!61 &3846475714184242062
 BoxCollider2D:
