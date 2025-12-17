@@ -392,7 +392,7 @@ MonoBehaviour:
   shootSource: {fileID: 6122571774253885081}
   hitSource: {fileID: 1602665618338048739}
   pickupSource: {fileID: 0}
-  groundCheckDistance: 0.1
+  groundCheckDistance: 0.3
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
