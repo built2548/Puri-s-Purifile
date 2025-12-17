@@ -21,6 +21,7 @@ public class GasScript : MonoBehaviour
         if (damageCollider != null)
         {
              damageCollider.enabled = true;
+
              Debug.Log("Gas Damage ENABLED.");
         }
     }
@@ -30,14 +31,18 @@ public class GasScript : MonoBehaviour
         if (damageCollider != null)
         {
              damageCollider.enabled = false;
-          // ⭐ NEW: Play the local smash sound
-             if (GasSource != null)
-             {
-                 // Randomize pitch slightly for a better "heavy" feel
-                 GasSource.pitch = Random.Range(0.85f, 1.15f);
-                 GasSource.Play();
-             }
+
              Debug.Log("Gas Damage DISABLED.");
+        }
+    }
+    public void PlayGasSound()
+    {
+        // ⭐ NEW: Play the local gas sound
+        if (GasSource != null)
+        {
+            // Randomize pitch slightly for variation
+            GasSource.pitch = Random.Range(0.85f, 1.15f);
+            GasSource.Play();
         }
     }
 }

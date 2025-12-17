@@ -392,7 +392,7 @@ MonoBehaviour:
   shootSource: {fileID: 6122571774253885081}
   hitSource: {fileID: 1602665618338048739}
   pickupSource: {fileID: 0}
-  groundCheckDistance: 0.1
+  groundCheckDistance: 0.3
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
@@ -440,8 +440,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.02590847, y: 0.11334646}
-  m_Size: {x: 0.36061573, y: 0.99935555}
+  m_Offset: {x: 0.02590847, y: 0.029582024}
+  m_Size: {x: 0.36061573, y: 1.1668844}
   m_Direction: 0
 --- !u!50 &6626276544799344979
 Rigidbody2D:
