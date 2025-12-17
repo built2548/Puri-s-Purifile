@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip alienHit;
     public AudioClip alienChasing;
     public AudioClip alienDeath;
+    public AudioClip smash;
 
    private void Start()
     {
@@ -25,4 +26,5 @@ public class AudioManager : MonoBehaviour
     {
         sfxSource.PlayOneShot(clip);
     }
+
 }

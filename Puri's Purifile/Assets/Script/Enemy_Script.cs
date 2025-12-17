@@ -136,11 +136,9 @@ public class Enemy_Script : MonoBehaviour
                 Patrol();
                 break;
             case EnemyState.Chase:
-            audioManager.PlaySFX(audioManager.alienChasing);
                 ChasePlayer();
                 break;
             case EnemyState.Attack:
-            audioManager.PlaySFX(audioManager.laser);
                 AttackPlayer();
                 break;
         }
@@ -200,28 +198,24 @@ void Patrol()
         myAnimator.SetBool("isWalking", true);
     }
 
-    void AttackPlayer()
-    {
-        // 1. Stop Movement
-        rb.velocity = new Vector2(0f, rb.velocity.y);
-        
-        // 2. Stop walking animation
-        myAnimator.SetBool("isWalking", false);
+  void AttackPlayer()
+{
+    rb.velocity = new Vector2(0f, rb.velocity.y);
+    myAnimator.SetBool("isWalking", false);
 
-        // 3. Face Player Direction
-        float directionToPlayer = Mathf.Sign(player.position.x - transform.position.x);
-        FlipSprite(directionToPlayer); 
-        
-        // 4. Attack (Shoot)
-        if (Time.time >= nextFireTime)
-        {
-            // Set the trigger and shoot only when ready to fire
-            myAnimator.SetTrigger("Shoot"); 
-            ShootProjectile();
-            nextFireTime = Time.time + fireRate;
-            
-        }
+    float directionToPlayer = Mathf.Sign(player.position.x - transform.position.x);
+    FlipSprite(directionToPlayer); 
+    
+    if (Time.time >= nextFireTime)
+    {
+        // ⭐ PLAY SOUND HERE - Only once per shot!
+        audioManager.PlaySFX(audioManager.laser); 
+
+        myAnimator.SetTrigger("Shoot"); 
+        ShootProjectile();
+        nextFireTime = Time.time + fireRate;
     }
+}
 
     public void ShootProjectile() 
     {

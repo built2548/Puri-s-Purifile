@@ -2,20 +2,27 @@ using UnityEngine;
 
 public class HammerDamage : MonoBehaviour
 {
+    AudioManager audioManager;
     [SerializeField] int damageAmount = 1; 
     
     // ⭐ NEW REFERENCE: Drag the Child Damage Zone's Collider here in the Inspector
     [SerializeField] Collider2D damageCollider; 
 
     // --- Methods called by Animation Events ---
-    
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     public void EnableDamage()
     {
         // Now enables the collider reference we assigned in the Inspector
         if (damageCollider != null)
         {
              damageCollider.enabled = true;
+             audioManager.PlaySFX(audioManager.smash);
              Debug.Log("Hammer Damage ENABLED.");
+
+
         }
     }
     
