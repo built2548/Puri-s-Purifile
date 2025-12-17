@@ -203,3 +203,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   lifetime: 1
   damageAmount: 1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64

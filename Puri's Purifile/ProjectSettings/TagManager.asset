@@ -8,6 +8,8 @@ TagManager:
   - Flame
   - Prop
   - Audio
+  - obstacle
+  - Obstacle
   layers:
   - Default
   - TransparentFX

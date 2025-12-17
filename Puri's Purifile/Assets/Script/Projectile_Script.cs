@@ -2,43 +2,44 @@ using UnityEngine;
 
 public class Projectile_Script : MonoBehaviour
 {
-    [SerializeField] float lifetime = 3f; // Projectile destroys itself after 3 seconds
-    [SerializeField] int damage = 1; // Damage value is optional if Puri_Script doesn't use it
+    [SerializeField] float lifetime = 3f; 
+    [SerializeField] int damage = 1; 
+
+    // 1. Added LayerMask for environment collisions
+    [SerializeField] private LayerMask obstructionLayer;
 
     void Start()
     {
-        // Start a timer to destroy the projectile automatically
         Destroy(gameObject, lifetime);
     }
 
-    // Called when the collider hits another object
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Check if the projectile hit the player using the "Player" tag
-        if (other.gameObject.tag == "Player")
+        // 2. Player Detection (Keep using Tag)
+        if (other.gameObject.CompareTag("Player"))
         {
-            // 1. Get the Puri_Script component from the collided object (the Player)
             Puri_Script player = other.GetComponent<Puri_Script>(); 
 
-            // 2. Check if the component was found (good practice!)
             if (player != null)
             {
-                // 3. Call the TakeDamage method on the player
-                // NOTE: Your Puri_Script.TakeDamage() does not take the 'damage' parameter, 
-                // it just handles the life loss.
                 player.TakeDamage(); 
-                
-                Debug.Log("Hit Player! Calling TakeDamage on Puri_Script.");
+                Debug.Log("Enemy hit Player!");
             }
             
-            // Destroy the projectile after impact
             Destroy(gameObject);
+            return; // Exit to avoid double-checking layers
         }
 
-        // Optional: Destroy the projectile if it hits a wall/obstruction
-        if (other.gameObject.tag == "Prop")
+        // 3. LAYER CHECK: Destroy if it hits Ground, Walls, or the Physical Door
+        // This uses the same bitwise check as your player bullet
+        if (((1 << other.gameObject.layer) & obstructionLayer) != 0)
         {
-            Destroy(other.gameObject);
+            // Optional: If you want enemy bullets to destroy "Props" specifically
+            if (other.gameObject.CompareTag("Prop"))
+            {
+                Destroy(other.gameObject);
+            }
+
             Destroy(gameObject);
         }
     }

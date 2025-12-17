@@ -3,51 +3,51 @@ using UnityEngine;
 public class PlayerProjectile : MonoBehaviour
 {
     [SerializeField] float lifetime = 3f;
-    [SerializeField] int damageAmount = 1; // Damage value for enemies
+    [SerializeField] int damageAmount = 1;
+
+    // 1. Add a LayerMask to define what counts as "Ground/Wall"
+    [SerializeField] private LayerMask groundLayer;
 
     void Start()
     {
         Destroy(gameObject, lifetime);
     }
+
     public void Initialize(float direction)
     {
-        // Flip the sprite scale to match the direction
         FlipSprite(direction);
     }
+
     void FlipSprite(float direction)
     {
-        // Get the current local scale of the projectile
         Vector3 currentScale = transform.localScale;
-
-        // Apply the flip: use the sign of the direction to set the X scale.
-        // The Mathf.Abs ensures you keep the magnitude of the original scale.
         transform.localScale = new Vector3(
             Mathf.Sign(direction) * Mathf.Abs(currentScale.x), 
             currentScale.y, 
-            currentScale.z)
-            ;
+            currentScale.z);
     }
 
-void OnTriggerEnter2D(Collider2D other)
-{
-    if (other.CompareTag("Enemy"))
+    void OnTriggerEnter2D(Collider2D other)
     {
-        // Get the Enemy_Script component from the object we hit
-        Enemy_Script enemy = other.GetComponent<Enemy_Script>();
-        
-        if (enemy != null)
+        // 2. Check for Enemy Tag (Keep this as Tag, it's fine for logic)
+        if (other.CompareTag("Enemy"))
         {
-            // Call the new TakeDamage method, passing 1 as the damage amount.
-            enemy.TakeDamage(1); 
+            Enemy_Script enemy = other.GetComponent<Enemy_Script>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damageAmount); 
+            }
+            
+            Destroy(gameObject); 
+            return; // Exit so we don't check layers if we already hit an enemy
         }
         
-        Destroy(gameObject); // Destroy the bullet
-    }
-        
-        // 2. Destroy if it hits ground or walls
-        if (other.gameObject.layer == LayerMask.NameToLayer("Ground") || other.gameObject.layer == LayerMask.NameToLayer("Obstruction"))
+        // 3. LAYER CHECK: Destroy if it hits Ground, Walls, or your Physical Door
+        // This checks if the 'other' object's layer is included in our LayerMask
+        if (((1 << other.gameObject.layer) & groundLayer) != 0)
         {
-             Destroy(gameObject);
+            Debug.Log("Projectile hit wall/ground layer: " + LayerMask.LayerToName(other.gameObject.layer));
+            Destroy(gameObject);
         }
     }
 }
