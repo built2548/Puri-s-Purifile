@@ -5,7 +5,13 @@ using UnityEngine.InputSystem;
 using FirstGearGames.SmoothCameraShaker;
 
 public class Puri_Script : MonoBehaviour
-{
+{   
+    [Header("Audio Child References")]
+    [SerializeField] private AudioSource jumpSource;
+    [SerializeField] private AudioSource shootSource;
+    [SerializeField] private AudioSource hitSource;
+    [SerializeField] private AudioSource pickupSource;
+
     [Header("UI")]
     [Header("Ground Check")]
     [SerializeField] float groundCheckDistance = 0.1f;
@@ -104,17 +110,18 @@ public class Puri_Script : MonoBehaviour
     
     return hit.collider != null;
 }
-    void OnJump(InputValue value)
+void OnJump(InputValue value)
     {
         if (!isAlive) { return; }
-        if (!IsGrounded()) 
-        {
-        return; 
-        }
-        if (value.isPressed )
+        if (!IsGrounded()) { return; }
+        
+        if (value.isPressed)
         {
             myRigidbody.linearVelocity += new Vector2(0f, jumpSpeed);
             myAnimator.SetBool("isJumping", true);
+
+            // ⭐ PLAY JUMP SOUND
+            if (jumpSource != null) jumpSource.Play();
         } 
     }
 
@@ -179,6 +186,11 @@ void Shoot()
         Debug.LogError("Projectile Prefab is not assigned to the Player script!");
         return;
     }
+    if (shootSource != null) 
+        {
+            shootSource.pitch = Random.Range(0.9f, 1.1f); // Tiny variety makes it feel better
+            shootSource.Play();
+        }
 
     // 1. Calculate the direction (1 for right, -1 for left)
     float direction = transform.localScale.x / Mathf.Abs(transform.localScale.x);
@@ -215,35 +227,26 @@ void Shoot()
         }
     }
 
-    public void TakeDamage() 
+public void TakeDamage() 
     {
-        if (!isAlive || isInvulnerable) return; // 💡 Double check protection
+        if (!isAlive || isInvulnerable) return;
 
-        // 1. Reduce a life
         lives--;
-        Debug.Log("Player hit! Lives remaining: " + lives);
+        
+        // ⭐ PLAY HIT SOUND
+        if (hitSource != null) hitSource.Play();
 
         CameraShakerHandler.Shake(smallShake);
-
-        // 2. Start the temporary invulnerability period
         StartCoroutine(BecomeTemporarilyInvulnerable());
-        // ⭐ NEW: Update the Heart UI immediately after reducing lives
+        
         if (heartDisplayManager != null)
         {
             heartDisplayManager.UpdateHealthDisplay(lives);
         }
-        // ⭐ END NEW
         
-        // 3. Check for game over
         if (lives <= 0)
         {
-            StartCoroutine(HandleDeath(true)); // True means final death
-        }
-        else
-        {
-            // You might want a slight knockback/damage animation here if not dying.
-            // StartCoroutine(HandleDeath(false)); // Use this line if you want the full 'death' animation/kick per hit.
-            // If you only want lives to decrease without the death animation/respawn:
+            StartCoroutine(HandleDeath(true));
         }
     }
 

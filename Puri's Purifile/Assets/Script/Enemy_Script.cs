@@ -2,13 +2,16 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
-
+using FirstGearGames.SmoothCameraShaker;
 public class Enemy_Script : MonoBehaviour
 {
     public enum EnemyState { Patrol, Chase, Attack }
 
-    
-
+    private AudioSource myAudioSource;
+    [Header("Audio Child References")]
+    [SerializeField] private AudioSource laserSource;
+    [SerializeField] private AudioSource deathSource;
+    [SerializeField] private AudioSource hitSource;
     [Header("Enemy Stats")]
     [SerializeField] int lives = 3;
     private bool isDead = false;
@@ -36,6 +39,7 @@ public class Enemy_Script : MonoBehaviour
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] float fireRate = 2f;
+    public ShakeData smallShake;
 
     // This will be found in Awake()
     private HealthBar healthBar; 
@@ -57,7 +61,6 @@ public class Enemy_Script : MonoBehaviour
         MaxLives = lives; 
         // GetComponentInChildren will find the HealthBar script on a child object
         healthBar = GetComponentInChildren<HealthBar>();
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
  void Start()
     {
@@ -208,8 +211,8 @@ void Patrol()
     
     if (Time.time >= nextFireTime)
     {
-        // ⭐ PLAY SOUND HERE - Only once per shot!
-        audioManager.PlaySFX(audioManager.laser); 
+        
+        if (laserSource != null) laserSource.Play();
 
         myAnimator.SetTrigger("Shoot"); 
         ShootProjectile();
@@ -261,8 +264,8 @@ public void TakeDamage(int damageAmount)
         if (isDead) return; // Ignore damage if already dead
         lives -= damageAmount;
         Debug.Log($"Enemy took {damageAmount} damage. Lives remaining: {lives}");
-        audioManager.PlaySFX(audioManager.alienHit);
-
+        // Play hit sound
+        if (hitSource != null) hitSource.Play();
         // --- HEALTH BAR UPDATE ---
         if (healthBar != null)
         {
@@ -282,27 +285,47 @@ public void TakeDamage(int damageAmount)
     /// Handles the enemy's destruction or death sequence.
     /// </summary>
 private void Die()
-    {
-        isDead = true; 
-        myAnimator.ResetTrigger("Hurt");
-        Debug.Log("Enemy destroyed!");
-        
-        // Hide/Clear Health Bar on death
-        if (healthBar != null)
-        {
-            audioManager.PlaySFX(audioManager.alienDeath);
-            healthBar.UpdateHealthBar(0, MaxLives);
-        }
-        
-        // Animation
-        myAnimator.SetBool("isWalking", false);
-        myAnimator.ResetTrigger("Shoot");
-        myAnimator.SetTrigger("Dead");
-        myCapsule.offset = new Vector2(0f, 0.7f); // Adjust collider offset
-        // Physics & Script Control
-        rb.velocity = Vector2.zero;
-        this.enabled = false; 
+{
+    if (isDead) return;
+    isDead = true; 
+    
+    myAnimator.ResetTrigger("Hurt");
+    Debug.Log("Enemy Dead!");
+    CameraShakerHandler.Shake(smallShake);
 
-        Destroy(gameObject, dyingTime); 
+    // 1. Health Bar Update
+    if (healthBar != null)
+    {
+        healthBar.UpdateHealthBar(0, MaxLives);
     }
+
+    // 2. Play Death SFX from Child
+    if (deathSource != null)
+    {
+        // Unparent so the sound stays put while the enemy might move/fall
+        deathSource.transform.SetParent(null); 
+        deathSource.Play();
+        Destroy(deathSource.gameObject, 2f); 
+    }
+
+    // 3. COLLIDER LOGIC
+    // We keep the collider ENABLED as you asked, but we change the Layer
+    // Change "Ignore Raycast" to a layer your bullets DON'T hit
+    gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+    myCapsule.offset = new Vector2(0f, 0.7f); // Adjust collider offset
+
+    // 4. Physics: Stop the enemy but let it fall if it's in the air
+    rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+
+    // 5. Animations
+    myAnimator.SetBool("isWalking", false);
+    myAnimator.ResetTrigger("Shoot");
+    myAnimator.SetTrigger("Dead");
+
+    // 6. Disable the script so Update() stops running
+    this.enabled = false; 
+
+    // Final destruction after the animation finishes
+    Destroy(gameObject, dyingTime); 
+}
 }
