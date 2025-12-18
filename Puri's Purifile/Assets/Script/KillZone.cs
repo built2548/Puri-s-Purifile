@@ -2,15 +2,28 @@ using UnityEngine;
 
 public class KillZone : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    [Header("Settings")]
+    [SerializeField] private bool killInstantly = false; // True = Game Over, False = Lose 1 Life & Respawn
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.CompareTag("Player"))
+        // Check if the object entering the zone is the Player
+        if (other.CompareTag("Player"))
         {
-            Puri_Script player = collision.GetComponent<Puri_Script>();
+            Puri_Script player = other.GetComponent<Puri_Script>();
+
             if (player != null)
             {
-                // Force health to 0 to trigger the full death sequence
-                player.KillInstantly();
+                if (killInstantly)
+                {
+                    // Forces lives to 0 and triggers Game Over
+                    player.KillInstantly();
+                }
+                else
+                {
+                    // Subtracts 1 life and triggers the Respawn at Checkpoint
+                    player.TakeDamage();
+                }
             }
         }
     }

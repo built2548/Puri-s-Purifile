@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2522502193668618467
+--- !u!1 &1494102436423304782
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7451422035857512160}
-  - component: {fileID: 1602665618338048739}
-  m_Layer: 10
-  m_Name: Hit
+  - component: {fileID: 7330412500530715621}
+  - component: {fileID: 5408515127260689411}
+  m_Layer: 0
+  m_Name: Death
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7451422035857512160
+--- !u!4 &7330412500530715621
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2522502193668618467}
+  m_GameObject: {fileID: 1494102436423304782}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 25.87234, y: 2.67452, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3774816608672408829}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1602665618338048739
+--- !u!82 &5408515127260689411
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2522502193668618467}
+  m_GameObject: {fileID: 1494102436423304782}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -3975696336001302822, guid: 4a9a9cb4383755c4a881f72445ab5378, type: 2}
+  OutputAudioMixerGroup: {fileID: -6978720698309141535, guid: 4a9a9cb4383755c4a881f72445ab5378, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: fea59d6bd9127374e93fef8bd0058669, type: 3}
+  m_Resource: {fileID: 8300000, guid: 81fab29d3f432824e86cf7c4dc83024c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -129,7 +129,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &3514266315028075269
+--- !u!1 &2522502193668618467
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,22 +137,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1772863060481157600}
-  - component: {fileID: 7844507657401813716}
+  - component: {fileID: 7451422035857512160}
+  - component: {fileID: 1602665618338048739}
   m_Layer: 10
-  m_Name: Death
+  m_Name: Hit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1772863060481157600
+--- !u!4 &7451422035857512160
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3514266315028075269}
+  m_GameObject: {fileID: 2522502193668618467}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -161,18 +161,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3774816608672408829}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &7844507657401813716
+--- !u!82 &1602665618338048739
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3514266315028075269}
+  m_GameObject: {fileID: 2522502193668618467}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 5364125592375467437, guid: 4a9a9cb4383755c4a881f72445ab5378, type: 2}
+  OutputAudioMixerGroup: {fileID: -3975696336001302822, guid: 4a9a9cb4383755c4a881f72445ab5378, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 59d3db33aefa0bd459aeb6e7a67fbca2, type: 3}
+  m_Resource: {fileID: 8300000, guid: fea59d6bd9127374e93fef8bd0058669, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -470,7 +470,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -113426849
-  m_SortingLayer: 11
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: 4723107735738678597, guid: 74e811f0c6dbe1f499b509af6410b06f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -517,19 +517,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e6287302707ca348922df416a11d8a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  bulletPrefabs: []
+  bulletPrefabs:
+  - {fileID: 8301095824278099436, guid: 399e2790642ece744883cf6c722361a2, type: 3}
+  - {fileID: 8641098630309537255, guid: be097cd79cecae4469bbe48b8456971c, type: 3}
+  - {fileID: 7273937718973248575, guid: 7fc1013281e62d943821903c328c03d8, type: 3}
   jumpSource: {fileID: 1321284983501231258}
   shootSource: {fileID: 6122571774253885081}
   hitSource: {fileID: 1602665618338048739}
   pickupSource: {fileID: 7881996974470556583}
-  deathSource: {fileID: 7844507657401813716}
+  deathSource: {fileID: 5408515127260689411}
   groundCheckDistance: 0.3
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
   lives: 3
   invulnerableDuration: 0.5
-  projectilePrefab: {fileID: 8301095824278099436, guid: 399e2790642ece744883cf6c722361a2, type: 3}
+  projectileSpeed: 10
   fireRate: 0.5
   runspeed: 5
   jumpSpeed: 5.5
@@ -662,8 +665,8 @@ Transform:
   - {fileID: 5639243145378552694}
   - {fileID: 7451422035857512160}
   - {fileID: 3105697272678135088}
-  - {fileID: 1772863060481157600}
   - {fileID: 2649685480618161456}
+  - {fileID: 7330412500530715621}
   m_Father: {fileID: 476102933907647209}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7060002671688143067

@@ -22,7 +22,7 @@ public class GasScript : MonoBehaviour
         {
              damageCollider.enabled = true;
 
-             
+             Debug.Log("Gas Damage ENABLED.");
         }
     }
     
@@ -32,7 +32,7 @@ public class GasScript : MonoBehaviour
         {
              damageCollider.enabled = false;
 
-             
+             Debug.Log("Gas Damage DISABLED.");
         }
     }
     public void PlayGasSound()

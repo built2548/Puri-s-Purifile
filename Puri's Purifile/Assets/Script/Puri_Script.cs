@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,7 @@ public class Puri_Script : MonoBehaviour
 {
     [Header("Bullet Levels")]
     [SerializeField] private GameObject[] bulletPrefabs; // Slot 0 = Lv1, Slot 1 = Lv2, Slot 2 = Lv3
-    private int bulletLevel = 0; // 0 is Lv1, 1 is Lv2, 2 is Lv3
+    private int bulletLevel = 0;
 
     [Header("Audio Child References")]
     [SerializeField] private AudioSource jumpSource;
@@ -17,25 +18,23 @@ public class Puri_Script : MonoBehaviour
     [SerializeField] private AudioSource pickupSource;
     [SerializeField] private AudioSource deathSource;
 
-    [Header("UI")]
     [Header("Ground Check")]
     [SerializeField] float groundCheckDistance = 0.1f;
     [SerializeField] LayerMask whatIsGround;
+
     [Header("Player Stats")]
     [SerializeField] int lives = 3;
     public int Lives { get { return lives; } }
-    // 💡 NEW: Duration player is invulnerable after a hit
     [SerializeField] float invulnerableDuration = 1.5f;
-    private bool isInvulnerable = false; // 💡 NEW: Flag to block damage
+    private bool isInvulnerable = false;
+
     [Header("Respawn Logic")]
     private Vector3 currentCheckpoint;
 
-    // ⭐ NEW: Shooting Fields
     [Header("Shooting")]
-    [SerializeField] GameObject projectilePrefab; // Assign the bullet prefab in the Inspector
-    [SerializeField] float fireRate = 0.5f; // Time between shots
+    [SerializeField] float projectileSpeed = 15f;
+    [SerializeField] float fireRate = 0.5f;
     private float nextFireTime;
-    // ⭐ END NEW
 
     [Header("Movement")]
     [SerializeField] float runspeed = 5f;
@@ -43,8 +42,8 @@ public class Puri_Script : MonoBehaviour
     [SerializeField] float climbSpeed = 5f;
     [SerializeField] Vector2 deathkick = new Vector2(1f, 1f);
 
-    // References and Variables
-    Vector2 moveInput;
+    // References and Variables
+    Vector2 moveInput;
     Rigidbody2D myRigidbody;
     Vector2 originalScale;
     Animator myAnimator;
@@ -52,19 +51,17 @@ public class Puri_Script : MonoBehaviour
     float gravityScaleAtStart;
     bool isAlive = true;
     public ShakeData smallShake;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     private HeartDisplayManager heartDisplayManager;
 
     void Awake()
     {
-        // If the HeartPanel is a permanent object in the scene:
         heartDisplayManager = FindObjectOfType<HeartDisplayManager>();
-
         if (heartDisplayManager == null)
         {
-            Debug.LogError("HeartDisplayManager not found in the scene! Ensure the HeartPanel prefab is instantiated.");
+            Debug.LogError("HeartDisplayManager not found!");
         }
     }
+
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -72,21 +69,22 @@ public class Puri_Script : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         myCapsule = GetComponent<CapsuleCollider2D>();
         gravityScaleAtStart = myRigidbody.gravityScale;
+
+        // Initial Checkpoint is the starting position
         currentCheckpoint = transform.position;
-        // ⭐ NEW: Initialize the health display on start (show 3 hearts)
+
         if (heartDisplayManager != null)
         {
             heartDisplayManager.UpdateHealthDisplay(lives);
         }
-        // ⭐ END NEW
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!isAlive) { return; }
 
-        if (myCapsule.IsTouchingLayers(LayerMask.GetMask("Ground", "Climbing", "MovingPlatform")) && Mathf.Abs(myRigidbody.linearVelocity.y) <= Mathf.Epsilon)
+        // Reset jumping animation when touching ground
+        if (myCapsule.IsTouchingLayers(LayerMask.GetMask("Ground", "Climbing", "MovingPlatform")) && Mathf.Abs(myRigidbody.linearVelocity.y) <= Mathf.Epsilon)
         {
             myAnimator.SetBool("isJumping", false);
         }
@@ -96,39 +94,21 @@ public class Puri_Script : MonoBehaviour
         CheckForDeath();
         ClimbLadder();
     }
-    public void UpdateCheckpoint(Vector3 newPos)
+
+    // --- CHECKPOINT LOGIC ---
+    public void UpdateCheckpoint(Vector3 newPos)
     {
         currentCheckpoint = newPos;
-    }   
+        Debug.Log("Checkpoint Saved!");
+    }
 
-    // ... (OnMove, OnJump, Run, FlipSprite, ClimbLadder, OnAttack are unchanged) ...
-    void OnMove(InputValue value)
+    // --- INPUT ACTIONS ---
+    void OnMove(InputValue value)
     {
         if (!isAlive) { return; }
         moveInput = value.Get<Vector2>();
     }
-    public void PlayPickupSound()
-    {
-        if (pickupSource != null)
-        {
-            pickupSource.pitch = Random.Range(0.9f, 1.1f);
-            pickupSource.Play();
-        }
-    }
-    bool IsGrounded()
-    {
-        // Check below the player's bottom edge for the ground layers
-        // Adjust the origin and size based on your player's collider setup (using raycast is simpler)
 
-        // Raycast straight down from the center bottom of the collider:
-        Vector2 raycastOrigin = myCapsule.bounds.center + Vector3.down * myCapsule.size.y / 2f;
-        RaycastHit2D hit = Physics2D.Raycast(raycastOrigin, Vector2.down, groundCheckDistance, whatIsGround);
-
-        // Optional: Draw a debug line to visualize the check in the Scene View
-        Debug.DrawRay(raycastOrigin, Vector2.down * groundCheckDistance, hit.collider != null ? Color.green : Color.red);
-
-        return hit.collider != null;
-    }
     void OnJump(InputValue value)
     {
         if (!isAlive) { return; }
@@ -136,12 +116,29 @@ public class Puri_Script : MonoBehaviour
 
         if (value.isPressed)
         {
-            myRigidbody.linearVelocity += new Vector2(0f, jumpSpeed);
+            myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, jumpSpeed);
             myAnimator.SetBool("isJumping", true);
-
-            // ⭐ PLAY JUMP SOUND
             if (jumpSource != null) jumpSource.Play();
         }
+    }
+
+    void OnAttack(InputValue value)
+    {
+        if (!isAlive) { return; }
+        if (value.isPressed && Time.time >= nextFireTime)
+        {
+            myAnimator.SetTrigger("Attack");
+            Shoot();
+            nextFireTime = Time.time + fireRate;
+        }
+    }
+
+    // --- MOVEMENT METHODS ---
+    bool IsGrounded()
+    {
+        Vector2 raycastOrigin = (Vector2)myCapsule.bounds.center + Vector2.down * (myCapsule.size.y / 2f);
+        RaycastHit2D hit = Physics2D.Raycast(raycastOrigin, Vector2.down, groundCheckDistance, whatIsGround);
+        return hit.collider != null;
     }
 
     void Run()
@@ -151,8 +148,7 @@ public class Puri_Script : MonoBehaviour
             myAnimator.SetBool("isRunning", false);
             return;
         }
-        Vector2 playerVelocity = new Vector2(moveInput.x * runspeed, myRigidbody.linearVelocity.y);
-        myRigidbody.linearVelocity = playerVelocity;
+        myRigidbody.linearVelocity = new Vector2(moveInput.x * runspeed, myRigidbody.linearVelocity.y);
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.linearVelocity.x) > Mathf.Epsilon;
         myAnimator.SetBool("isRunning", playerHasHorizontalSpeed);
     }
@@ -175,116 +171,91 @@ public class Puri_Script : MonoBehaviour
             return;
         }
 
-        Vector2 climbVelocity = new Vector2(myRigidbody.linearVelocity.x, moveInput.y * climbSpeed);
-        myRigidbody.linearVelocity = climbVelocity;
+        myRigidbody.linearVelocity = new Vector2(myRigidbody.linearVelocity.x, moveInput.y * climbSpeed);
         myRigidbody.gravityScale = 0f;
-
         bool playerHasVerticalSpeed = Mathf.Abs(myRigidbody.linearVelocity.y) > Mathf.Epsilon;
         myAnimator.SetBool("isClimbing", playerHasVerticalSpeed);
     }
 
-    void OnAttack(InputValue value)
+    // --- COMBAT METHODS ---
+    void Shoot()
     {
-        if (!isAlive) { return; }
+        if (bulletPrefabs == null || bulletLevel >= bulletPrefabs.Length || bulletPrefabs[bulletLevel] == null) return;
 
-        if (value.isPressed)
-        {
-            if (Time.time >= nextFireTime) // Check fire rate
-            {
-                myAnimator.SetTrigger("Attack");
-                Shoot(); // ⭐ CALL THE NEW SHOOT FUNCTION
-                nextFireTime = Time.time + fireRate; // Reset fire time
-            }
-        }
-    }
-
-    void Shoot()
-    {
-        // 1. Safety Check
-        if (bulletPrefabs == null || bulletLevel >= bulletPrefabs.Length || bulletPrefabs[bulletLevel] == null)
-        {
-            return;
-        }
-
-        // 2. ⭐ PLAY DEFAULT SOUND (From the Player's ShootSource)
         if (shootSource != null)
         {
+            shootSource.pitch = Random.Range(0.9f, 1.1f);
             shootSource.Play();
         }
 
-        // 3. Calculate Direction & Position
         float direction = Mathf.Sign(transform.localScale.x);
         Vector3 spawnPos = transform.position + new Vector3(direction * 0.8f, 0, 0);
 
-        // 4. Spawn the current level bullet
         GameObject projectile = Instantiate(bulletPrefabs[bulletLevel], spawnPos, Quaternion.identity);
-
-        // 5. Initialize Speed/Damage inside the bullet
         PlayerProjectile projScript = projectile.GetComponent<PlayerProjectile>();
         if (projScript != null)
         {
             projScript.Initialize(direction);
         }
     }
+
     public void UpgradeBullet()
     {
-        // Only upgrade if the NEXT level actually has a prefab assigned
-        if (bulletLevel + 1 < bulletPrefabs.Length && bulletPrefabs[bulletLevel + 1] != null)
+        if (bulletLevel + 1 < bulletPrefabs.Length)
         {
             bulletLevel++;
-        }
-        else
-        {
-            Debug.Log("Already at Max Level or Next Level Prefab is missing!");
+            PlayPickupSound();
         }
     }
 
     public void ResetBulletLevel()
     {
-        bulletLevel = 0; // Reset to Lv1
-        Debug.Log("Bullet Reset to Lv1");
+        bulletLevel = 0;
     }
 
-    // --- LIVES AND DEATH LOGIC ---
-
-    void CheckForDeath()
+    public void PlayPickupSound()
     {
-        // 💡 ONLY CALL TakeDamage IF NOT INVULNERABLE
-        if (!isInvulnerable && myCapsule.IsTouchingLayers(LayerMask.GetMask("Flame")))
+        if (pickupSource != null) pickupSource.Play();
+    }
+
+    // --- HEALTH & DEATH LOGIC ---
+    void CheckForDeath()
+    {
+        if (!isInvulnerable && (myCapsule.IsTouchingLayers(LayerMask.GetMask("Flame"))))
         {
             TakeDamage();
         }
     }
 
-public void TakeDamage()
-{
-    if (!isAlive || isInvulnerable) return;
-
-    lives--;
-    ResetBulletLevel();
-    if (hitSource != null) hitSource.Play();
-
-    CameraShakerHandler.Shake(smallShake);
-    
-    if (heartDisplayManager != null)
+    public void TakeDamage()
     {
-        heartDisplayManager.UpdateHealthDisplay(lives);
+        if (!isAlive || isInvulnerable) return;
+
+        lives--;
+        ResetBulletLevel();
+        if (hitSource != null) hitSource.Play();
+
+        CameraShakerHandler.Shake(smallShake);
+
+        if (heartDisplayManager != null)
+        {
+            heartDisplayManager.UpdateHealthDisplay(lives);
+        }
+
+        if (lives <= 0)
+        {
+            StartCoroutine(HandleDeath(true));
+        }
+        else
+        {
+            StartCoroutine(HandleDeath(false)); // Respawn at checkpoint
+        }
     }
 
-    if (lives <= 0)
-    {
-        StartCoroutine(HandleDeath(true)); // Total Game Over
-    }
-    else
-    {
-        // 💡 ADD THIS: Trigger respawn at checkpoint if player still has lives
-        StartCoroutine(HandleDeath(false)); 
-    }
-}
     public void KillInstantly()
     {
         if (!isAlive) return;
-        lives = 0; // Drop lives to zero
+        lives = 0;
         if (heartDisplayManager != null) heartDisplayManager.UpdateHealthDisplay(0);
         StartCoroutine(HandleDeath(true));
     }
@@ -292,76 +263,54 @@ public void TakeDamage()
     IEnumerator BecomeTemporarilyInvulnerable()
     {
         isInvulnerable = true;
-
-        // Optional: Add visual flashing effect here (e.g., SpriteRenderer.enabled = false/true loop)
-        // loop for flashing effect;
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         float flashInterval = 0.1f;
         float elapsed = 0f;
+
         while (elapsed < invulnerableDuration)
         {
-
             spriteRenderer.enabled = !spriteRenderer.enabled;
             yield return new WaitForSeconds(flashInterval);
             elapsed += flashInterval;
         }
 
-
-
-        yield return new WaitForSeconds(invulnerableDuration);
-
+        spriteRenderer.enabled = true;
         isInvulnerable = false;
-
-        // Optional: Stop flashing effect
-        spriteRenderer.enabled = true; // Ensure sprite is visible at end
-
     }
 
     IEnumerator HandleDeath(bool isGameOver)
     {
         isAlive = false;
-        if (deathSource != null)
-        {
-            deathSource.pitch = Random.Range(0.9f, 1.1f); // Tiny variety makes it feel better
-            deathSource.Play();
-        }
+        if (deathSource != null) deathSource.Play();
 
-        // Apply Death Animation and Physics
         myAnimator.SetTrigger("Dying");
         myCapsule.offset = new Vector2(0f, 0.7f);
-
-        // Apply death kick force
-        myRigidbody.velocity = new Vector2(
-            deathkick.x * -transform.localScale.x,
-            deathkick.y
-        );
+        myRigidbody.linearVelocity = new Vector2(deathkick.x * -transform.localScale.x, deathkick.y);
 
         yield return new WaitForSeconds(1.5f);
 
-        // --- Handle Respawn or Game Over ---
         if (isGameOver)
         {
             Debug.Log("GAME OVER!");
-            // SceneManager.LoadScene("GameOverScene"); 
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+        }
+        else
+        {
+            // RESPAWN AT CHECKPOINT
+            transform.position = currentCheckpoint;
+            isAlive = true;
+
+            // Reset Physics
+            myRigidbody.linearVelocity = Vector2.zero;
+            myRigidbody.gravityScale = gravityScaleAtStart;
+            myCapsule.offset = Vector2.zero;
+
+            // Reset Visuals
+            myAnimator.Play("Idle");
+            myAnimator.SetBool("isRunning", false);
+            myAnimator.SetBool("isJumping", false);
+
+            StartCoroutine(BecomeTemporarilyInvulnerable());
         }
-else
-{
-    // RESPAWN LOGIC
-    isAlive = true;
-    
-    // Move to checkpoint
-    transform.position = currentCheckpoint;
-    
-    // Reset Physics and Visuals
-    myRigidbody.linearVelocity = Vector2.zero;
-    myRigidbody.gravityScale = gravityScaleAtStart; // Restore gravity
-    myCapsule.offset = new Vector2(0f, 0f); // Reset collider offset
-    
-    // Optional: Make player invulnerable for a second after respawning
-    StartCoroutine(BecomeTemporarilyInvulnerable());
-    
-    myAnimator.SetBool("isRunning", false);
-    myAnimator.Play("Idle"); // Force animation back to idle
-}
     }
 }

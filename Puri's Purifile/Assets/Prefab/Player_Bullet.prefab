@@ -81,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -498122445
-  m_SortingLayer: 14
+  m_SortingLayer: 15
   m_SortingOrder: 0
   m_Sprite: {fileID: -8007119781752069468, guid: acd9c16cf5428384dbe94c52096d3e5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -201,8 +201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54f8d7f33e51c8419eb9b1da9008d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  lifetime: 1
+  speed: 8
   damageAmount: 1
+  lifetime: 1
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
