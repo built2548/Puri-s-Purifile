@@ -23,7 +23,7 @@ TagManager:
   - MovingPlatform
   - Player
   - Flame
-  - 
+  - Item
   - 
   - 
   - 
@@ -76,6 +76,9 @@ TagManager:
     locked: 0
   - name: Climbing
     uniqueID: 1247936213
+    locked: 0
+  - name: Item
+    uniqueID: 1230688051
     locked: 0
   - name: Player
     uniqueID: 4181540447
