@@ -1,0 +1,3979 @@
+fileFormatVersion: 2
+guid: 109b051f21dceaf41b5b432b74ef9076
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6882619454352841168
+    second: TileSet_house_interior_v_1.0_0
+  - first:
+      213: -2328468316726527394
+    second: TileSet_house_interior_v_1.0_1
+  - first:
+      213: 8931211936970475211
+    second: TileSet_house_interior_v_1.0_2
+  - first:
+      213: 6601695228628587122
+    second: TileSet_house_interior_v_1.0_3
+  - first:
+      213: 1160596460354667851
+    second: TileSet_house_interior_v_1.0_4
+  - first:
+      213: 7682996845308442291
+    second: TileSet_house_interior_v_1.0_5
+  - first:
+      213: -8605858102760989662
+    second: TileSet_house_interior_v_1.0_6
+  - first:
+      213: -5412617293684839443
+    second: TileSet_house_interior_v_1.0_7
+  - first:
+      213: 3628857370317062503
+    second: TileSet_house_interior_v_1.0_8
+  - first:
+      213: -2730134433268212591
+    second: TileSet_house_interior_v_1.0_9
+  - first:
+      213: 9033214155451156693
+    second: TileSet_house_interior_v_1.0_10
+  - first:
+      213: 6952101822410056535
+    second: TileSet_house_interior_v_1.0_11
+  - first:
+      213: -1258449403989814424
+    second: TileSet_house_interior_v_1.0_12
+  - first:
+      213: -8093713490441676814
+    second: TileSet_house_interior_v_1.0_13
+  - first:
+      213: 8526320803344911311
+    second: TileSet_house_interior_v_1.0_14
+  - first:
+      213: 1500099881297232758
+    second: TileSet_house_interior_v_1.0_15
+  - first:
+      213: 3732767847493252975
+    second: TileSet_house_interior_v_1.0_16
+  - first:
+      213: -4376089620295442714
+    second: TileSet_house_interior_v_1.0_17
+  - first:
+      213: -3846970307441852629
+    second: TileSet_house_interior_v_1.0_18
+  - first:
+      213: 1147691856359496909
+    second: TileSet_house_interior_v_1.0_19
+  - first:
+      213: -6413520671031725150
+    second: TileSet_house_interior_v_1.0_20
+  - first:
+      213: -4196178042261114115
+    second: TileSet_house_interior_v_1.0_21
+  - first:
+      213: 3820094072073413229
+    second: TileSet_house_interior_v_1.0_22
+  - first:
+      213: 2116575269962324874
+    second: TileSet_house_interior_v_1.0_23
+  - first:
+      213: 8792018761369844699
+    second: TileSet_house_interior_v_1.0_24
+  - first:
+      213: -4205746062647765324
+    second: TileSet_house_interior_v_1.0_25
+  - first:
+      213: 5934980638420730617
+    second: TileSet_house_interior_v_1.0_26
+  - first:
+      213: 1472041144818380972
+    second: TileSet_house_interior_v_1.0_27
+  - first:
+      213: 392506150315803585
+    second: TileSet_house_interior_v_1.0_28
+  - first:
+      213: 3440139969453862393
+    second: TileSet_house_interior_v_1.0_29
+  - first:
+      213: 6092786942130996994
+    second: TileSet_house_interior_v_1.0_30
+  - first:
+      213: 8497155773360324044
+    second: TileSet_house_interior_v_1.0_31
+  - first:
+      213: 7178981170472295784
+    second: TileSet_house_interior_v_1.0_32
+  - first:
+      213: 6161524802686177947
+    second: TileSet_house_interior_v_1.0_33
+  - first:
+      213: 4331820255784159327
+    second: TileSet_house_interior_v_1.0_34
+  - first:
+      213: -2487407176136897411
+    second: TileSet_house_interior_v_1.0_35
+  - first:
+      213: -3114738224986474540
+    second: TileSet_house_interior_v_1.0_36
+  - first:
+      213: -6651039218187628797
+    second: TileSet_house_interior_v_1.0_37
+  - first:
+      213: -4049824274599030489
+    second: TileSet_house_interior_v_1.0_38
+  - first:
+      213: 6804321572273338481
+    second: TileSet_house_interior_v_1.0_39
+  - first:
+      213: 6262717148535452972
+    second: TileSet_house_interior_v_1.0_40
+  - first:
+      213: -6618916609272733876
+    second: TileSet_house_interior_v_1.0_41
+  - first:
+      213: -2771512997069083994
+    second: TileSet_house_interior_v_1.0_42
+  - first:
+      213: -2170408142730976625
+    second: TileSet_house_interior_v_1.0_43
+  - first:
+      213: -7590161340292454602
+    second: TileSet_house_interior_v_1.0_44
+  - first:
+      213: 1902708060676975238
+    second: TileSet_house_interior_v_1.0_45
+  - first:
+      213: 4500227830211346112
+    second: TileSet_house_interior_v_1.0_46
+  - first:
+      213: 7614772210024076118
+    second: TileSet_house_interior_v_1.0_47
+  - first:
+      213: -7921503010263953160
+    second: TileSet_house_interior_v_1.0_48
+  - first:
+      213: 7536250150949466787
+    second: TileSet_house_interior_v_1.0_49
+  - first:
+      213: 569262739533979806
+    second: TileSet_house_interior_v_1.0_50
+  - first:
+      213: -8846764754464884094
+    second: TileSet_house_interior_v_1.0_51
+  - first:
+      213: -8373054544083907553
+    second: TileSet_house_interior_v_1.0_52
+  - first:
+      213: 7702245299808196322
+    second: TileSet_house_interior_v_1.0_53
+  - first:
+      213: -5443869735041252521
+    second: TileSet_house_interior_v_1.0_54
+  - first:
+      213: -5464610298212003128
+    second: TileSet_house_interior_v_1.0_55
+  - first:
+      213: 3493265803769300255
+    second: TileSet_house_interior_v_1.0_56
+  - first:
+      213: 312535709930489958
+    second: TileSet_house_interior_v_1.0_57
+  - first:
+      213: 8255469866422644178
+    second: TileSet_house_interior_v_1.0_58
+  - first:
+      213: 1914654887532120398
+    second: TileSet_house_interior_v_1.0_59
+  - first:
+      213: -6085480629472887026
+    second: TileSet_house_interior_v_1.0_60
+  - first:
+      213: 6433978059507861975
+    second: TileSet_house_interior_v_1.0_61
+  - first:
+      213: 7965816904931978856
+    second: TileSet_house_interior_v_1.0_62
+  - first:
+      213: 4252398106793915885
+    second: TileSet_house_interior_v_1.0_63
+  - first:
+      213: -2297731536686069208
+    second: TileSet_house_interior_v_1.0_64
+  - first:
+      213: -7351844497338722832
+    second: TileSet_house_interior_v_1.0_65
+  - first:
+      213: 5185534498564714163
+    second: TileSet_house_interior_v_1.0_66
+  - first:
+      213: -8915891732124209484
+    second: TileSet_house_interior_v_1.0_67
+  - first:
+      213: 5334149060655320712
+    second: TileSet_house_interior_v_1.0_68
+  - first:
+      213: -6922154090159697382
+    second: TileSet_house_interior_v_1.0_69
+  - first:
+      213: -7249980656883309466
+    second: TileSet_house_interior_v_1.0_70
+  - first:
+      213: 7351663110026671462
+    second: TileSet_house_interior_v_1.0_71
+  - first:
+      213: -7779947745893309519
+    second: TileSet_house_interior_v_1.0_72
+  - first:
+      213: -3999500583598352980
+    second: TileSet_house_interior_v_1.0_73
+  - first:
+      213: 4313927285145735940
+    second: TileSet_house_interior_v_1.0_74
+  - first:
+      213: -5712185509565169360
+    second: TileSet_house_interior_v_1.0_75
+  - first:
+      213: -5603713726766000657
+    second: TileSet_house_interior_v_1.0_76
+  - first:
+      213: -3431008277407467405
+    second: TileSet_house_interior_v_1.0_77
+  - first:
+      213: 2349728378232091465
+    second: TileSet_house_interior_v_1.0_78
+  - first:
+      213: -811264001427913683
+    second: TileSet_house_interior_v_1.0_79
+  - first:
+      213: -8712020415320232163
+    second: TileSet_house_interior_v_1.0_80
+  - first:
+      213: -5404637836863617602
+    second: TileSet_house_interior_v_1.0_81
+  - first:
+      213: 6666874333351778056
+    second: TileSet_house_interior_v_1.0_82
+  - first:
+      213: -6666760932933269150
+    second: TileSet_house_interior_v_1.0_83
+  - first:
+      213: 2375449312854137441
+    second: TileSet_house_interior_v_1.0_84
+  - first:
+      213: -4522033763802496643
+    second: TileSet_house_interior_v_1.0_85
+  - first:
+      213: 122456881985992551
+    second: TileSet_house_interior_v_1.0_86
+  - first:
+      213: 1840406226476806592
+    second: TileSet_house_interior_v_1.0_87
+  - first:
+      213: -427283844600365051
+    second: TileSet_house_interior_v_1.0_88
+  - first:
+      213: 8810566889232975164
+    second: TileSet_house_interior_v_1.0_89
+  - first:
+      213: -6983249969372933429
+    second: TileSet_house_interior_v_1.0_90
+  - first:
+      213: 8760269872168952894
+    second: TileSet_house_interior_v_1.0_91
+  - first:
+      213: -1215995418000824157
+    second: TileSet_house_interior_v_1.0_92
+  - first:
+      213: -8757239440605540340
+    second: TileSet_house_interior_v_1.0_93
+  - first:
+      213: -4522112334520003520
+    second: TileSet_house_interior_v_1.0_94
+  - first:
+      213: -8321786836152606115
+    second: TileSet_house_interior_v_1.0_95
+  - first:
+      213: -3004455278300679702
+    second: TileSet_house_interior_v_1.0_96
+  - first:
+      213: 1432140195831970675
+    second: TileSet_house_interior_v_1.0_97
+  - first:
+      213: -5443074306981226002
+    second: TileSet_house_interior_v_1.0_98
+  - first:
+      213: -9164795435357454724
+    second: TileSet_house_interior_v_1.0_99
+  - first:
+      213: -5656820413803654902
+    second: TileSet_house_interior_v_1.0_100
+  - first:
+      213: 5887271450543275170
+    second: TileSet_house_interior_v_1.0_101
+  - first:
+      213: -7668375342185595528
+    second: TileSet_house_interior_v_1.0_102
+  - first:
+      213: 1544653329745725267
+    second: TileSet_house_interior_v_1.0_103
+  - first:
+      213: -5109597538625060031
+    second: TileSet_house_interior_v_1.0_104
+  - first:
+      213: -8153747305827495138
+    second: TileSet_house_interior_v_1.0_105
+  - first:
+      213: 6875122004600666778
+    second: TileSet_house_interior_v_1.0_106
+  - first:
+      213: -7540669188207240816
+    second: TileSet_house_interior_v_1.0_107
+  - first:
+      213: 246710437066168321
+    second: TileSet_house_interior_v_1.0_108
+  - first:
+      213: 6040574220773417918
+    second: TileSet_house_interior_v_1.0_109
+  - first:
+      213: -3160697754166427443
+    second: TileSet_house_interior_v_1.0_110
+  - first:
+      213: -6760310549499213364
+    second: TileSet_house_interior_v_1.0_111
+  - first:
+      213: 3244593011330482524
+    second: TileSet_house_interior_v_1.0_112
+  - first:
+      213: -8729345744822689249
+    second: TileSet_house_interior_v_1.0_113
+  - first:
+      213: 731396170708928300
+    second: TileSet_house_interior_v_1.0_114
+  - first:
+      213: 5334614888028163207
+    second: TileSet_house_interior_v_1.0_115
+  - first:
+      213: 732755190552000694
+    second: TileSet_house_interior_v_1.0_116
+  - first:
+      213: 1219271342321433774
+    second: TileSet_house_interior_v_1.0_117
+  - first:
+      213: -8440584177784927961
+    second: TileSet_house_interior_v_1.0_118
+  - first:
+      213: -2505488271163346057
+    second: TileSet_house_interior_v_1.0_119
+  - first:
+      213: 7531472081805562672
+    second: TileSet_house_interior_v_1.0_120
+  - first:
+      213: 984815288920010662
+    second: TileSet_house_interior_v_1.0_121
+  - first:
+      213: -8407759673065118789
+    second: TileSet_house_interior_v_1.0_122
+  - first:
+      213: 8207128524036077422
+    second: TileSet_house_interior_v_1.0_123
+  - first:
+      213: -3701334383135078504
+    second: TileSet_house_interior_v_1.0_124
+  - first:
+      213: 3483634841234232428
+    second: TileSet_house_interior_v_1.0_125
+  - first:
+      213: -6097536621551710227
+    second: TileSet_house_interior_v_1.0_126
+  - first:
+      213: 6345194517265451950
+    second: TileSet_house_interior_v_1.0_127
+  - first:
+      213: -600229197246142928
+    second: TileSet_house_interior_v_1.0_128
+  - first:
+      213: 7248655550228032136
+    second: TileSet_house_interior_v_1.0_129
+  - first:
+      213: -108954695182970304
+    second: TileSet_house_interior_v_1.0_130
+  - first:
+      213: 91223069859379338
+    second: TileSet_house_interior_v_1.0_131
+  - first:
+      213: -8148582343172867182
+    second: TileSet_house_interior_v_1.0_132
+  - first:
+      213: -9167901151324047001
+    second: TileSet_house_interior_v_1.0_133
+  - first:
+      213: 2780855107665474533
+    second: TileSet_house_interior_v_1.0_134
+  - first:
+      213: -8493452157395814659
+    second: TileSet_house_interior_v_1.0_135
+  - first:
+      213: 2202904567462081007
+    second: TileSet_house_interior_v_1.0_136
+  - first:
+      213: 3036529254182249785
+    second: TileSet_house_interior_v_1.0_137
+  - first:
+      213: 5023979612295064638
+    second: TileSet_house_interior_v_1.0_138
+  - first:
+      213: 8808208639166463543
+    second: TileSet_house_interior_v_1.0_139
+  - first:
+      213: -2125383016441665552
+    second: TileSet_house_interior_v_1.0_140
+  - first:
+      213: -4900579684005915132
+    second: TileSet_house_interior_v_1.0_141
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 60
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 960
+        width: 12
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0362b1b62160c70a0800000000000000
+      internalID: -6882619454352841168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 960
+        width: 12
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a73c6176e9fafd0800000000000000
+      internalID: -2328468316726527394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 960
+        width: 12
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc68ad4efe902fb70800000000000000
+      internalID: 8931211936970475211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 991
+        width: 44
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2725cc945deed9b50800000000000000
+      internalID: 6601695228628587122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_4
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 944
+        width: 16
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b450403e4544b1010800000000000000
+      internalID: 1160596460354667851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_5
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 944
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b67e0facec7f9a60800000000000000
+      internalID: 7682996845308442291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_6
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 944
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c938db6a9d19880800000000000000
+      internalID: -8605858102760989662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 944
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb67c8af3582e4b0800000000000000
+      internalID: -5412617293684839443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_8
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 944
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7618e424d8a4c5230800000000000000
+      internalID: 3628857370317062503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_9
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 944
+        width: 16
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c5cf3a23d9c1ad0800000000000000
+      internalID: -2730134433268212591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_10
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 972
+        width: 58
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d842b31a6c6c5d70800000000000000
+      internalID: 9033214155451156693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 944
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753e81f06c3da7060800000000000000
+      internalID: 6952101822410056535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 927
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86392634fe6198ee0800000000000000
+      internalID: -1258449403989814424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_13
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 912
+        width: 12
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7df68767a5daf80800000000000000
+      internalID: -8093713490441676814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_14
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 912
+        width: 12
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb8564a893935670800000000000000
+      internalID: 8526320803344911311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_15
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 912
+        width: 12
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 673c358e4ec61d410800000000000000
+      internalID: 1500099881297232758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_16
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 944
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67b5da84947dc330800000000000000
+      internalID: 3732767847493252975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_17
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 895
+        width: 119
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee14050da10543c0800000000000000
+      internalID: -4376089620295442714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_18
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 944
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ff37333e0dc9ac0800000000000000
+      internalID: -3846970307441852629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_19
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 943
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc9ae1a9ab6def00800000000000000
+      internalID: 1147691856359496909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_20
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 943
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a377831ee89ef6a0800000000000000
+      internalID: -6413520671031725150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_21
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 921
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df27bb88d4e24c5c0800000000000000
+      internalID: -4196178042261114115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_22
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 911
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d62e28e9153b30530800000000000000
+      internalID: 3820094072073413229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_23
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 917
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b1b727ef59f5d10800000000000000
+      internalID: 2116575269962324874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_24
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 917
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdbf40a3b76830a70800000000000000
+      internalID: 8792018761369844699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_25
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 917
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6d1603d3032a5c0800000000000000
+      internalID: -4205746062647765324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_26
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 917
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f283ed12794d5250800000000000000
+      internalID: 5934980638420730617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_27
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 917
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0b8ab3f9dbd6410800000000000000
+      internalID: 1472041144818380972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_28
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 917
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c3cabd9346727500800000000000000
+      internalID: 392506150315803585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 854
+        width: 6
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fdabe85315ddbf20800000000000000
+      internalID: 3440139969453862393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_30
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 863
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2074bd1617ded8450800000000000000
+      internalID: 6092786942130996994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_31
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 863
+        width: 15
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd3d40f726fbe570800000000000000
+      internalID: 8497155773360324044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_32
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 854
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d1833b65dd0a360800000000000000
+      internalID: 7178981170472295784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_33
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 873
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b925ed2b922228550800000000000000
+      internalID: 6161524802686177947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_34
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 806
+        width: 7
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f584bd85297bd1c30800000000000000
+      internalID: 4331820255784159327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_35
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 831
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c4a962a54fa7dd0800000000000000
+      internalID: -2487407176136897411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_36
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 799
+        width: 82
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7b953461a36c4d0800000000000000
+      internalID: -3114738224986474540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 831
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f0cbcd113c2b3a0800000000000000
+      internalID: -6651039218187628797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_38
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 831
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72155c577422cc7c0800000000000000
+      internalID: -4049824274599030489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_39
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 825
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17831ec4b6ecd6e50800000000000000
+      internalID: 6804321572273338481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 785
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c25f337b014a9e650800000000000000
+      internalID: 6262717148535452972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_41
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 784
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f9d529962e424a0800000000000000
+      internalID: -6618916609272733876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_42
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 777
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aaa15ffc9b9989d0800000000000000
+      internalID: -2771512997069083994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 719
+        width: 16
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82a7e22b4921e1e0800000000000000
+      internalID: -2170408142730976625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_44
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 738
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63727f3b9745aa690800000000000000
+      internalID: -7590161340292454602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_45
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 708
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a6ce376e6c76a10800000000000000
+      internalID: 1902708060676975238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_46
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 737
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cef21c4e55047e30800000000000000
+      internalID: 4500227830211346112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_47
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 736
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6535000fafa1da960800000000000000
+      internalID: 7614772210024076118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_48
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 719
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0970a6bfa211290800000000000000
+      internalID: -7921503010263953160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_49
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 738
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2b3d16593269860800000000000000
+      internalID: 7536250150949466787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_50
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 707
+        width: 22
+        height: 34
+      alignment: 9
+      pivot: {x: 0.95, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90e9cd027d66e700800000000000000
+      internalID: 569262739533979806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_51
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 704
+        width: 7
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28abca6f35af93580800000000000000
+      internalID: -8846764754464884094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_52
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 723
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c88e6214feccb80800000000000000
+      internalID: -8373054544083907553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_53
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 671
+        width: 22
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e65dfbba4fd3ea60800000000000000
+      internalID: 7702245299808196322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_54
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 607
+        width: 74
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753cd5f915d7374b0800000000000000
+      internalID: -5443869735041252521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_55
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 656
+        width: 6
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c2d123f2edc924b0800000000000000
+      internalID: -5464610298212003128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_56
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 721
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1540bb8db29a7030800000000000000
+      internalID: 3493265803769300255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_57
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 688
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66808028299565400800000000000000
+      internalID: 312535709930489958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_58
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 704
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd201aaa12519270800000000000000
+      internalID: 8255469866422644178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 655
+        width: 21
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4941d6d978329a10800000000000000
+      internalID: 1914654887532120398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_60
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 704
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0f7fb81c970c8ba0800000000000000
+      internalID: -6085480629472887026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_61
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 659
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d98f99d4f41a4950800000000000000
+      internalID: 6433978059507861975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_62
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 675
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ea54435444c8e60800000000000000
+      internalID: 7965816904931978856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_63
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 671
+        width: 48
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5bef64c8d830b30800000000000000
+      internalID: 4252398106793915885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_64
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 671
+        width: 55
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a4d9e5751dc10e0800000000000000
+      internalID: -2297731536686069208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_65
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 592
+        width: 22
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f51734a16009f990800000000000000
+      internalID: -7351844497338722832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_66
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 607
+        width: 6
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3beab7df628b6f740800000000000000
+      internalID: 5185534498564714163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_67
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 608
+        width: 18
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bee4e245b3644480800000000000000
+      internalID: -8915891732124209484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_68
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 655
+        width: 48
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e08532f44b60a40800000000000000
+      internalID: 5334149060655320712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_69
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 608
+        width: 18
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a129387b7819fef90800000000000000
+      internalID: -6922154090159697382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_70
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 608
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 664640e2105e26b90800000000000000
+      internalID: -7249980656883309466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_71
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 607
+        width: 7
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 665bb75d5aa560660800000000000000
+      internalID: 7351663110026671462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_72
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 605
+        width: 42
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b3adeabeb2180490800000000000000
+      internalID: -7779947745893309519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_73
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 560
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca517a3d86bee78c0800000000000000
+      internalID: -3999500583598352980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_74
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 607
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4031af972062edb30800000000000000
+      internalID: 4313927285145735940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_75
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 569
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0310c332b8d3ab0b0800000000000000
+      internalID: -5712185509565169360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_76
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 593
+        width: 46
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5d1252e0c9b32b0800000000000000
+      internalID: -5603713726766000657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_77
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 593
+        width: 46
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378f3b3662c9260d0800000000000000
+      internalID: -3431008277407467405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_78
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 502
+        width: 45
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943bd27b289eb9020800000000000000
+      internalID: 2349728378232091465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_79
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 543
+        width: 7
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24c3df50bfcdb4f0800000000000000
+      internalID: -811264001427913683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_80
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 543
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1fe2ec279fa81780800000000000000
+      internalID: -8712020415320232163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_81
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 553
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5cb1ab58edef4b0800000000000000
+      internalID: -5404637836863617602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_82
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 553
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8071a9132ee758c50800000000000000
+      internalID: 6666874333351778056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_83
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 560
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2698f06e048ea73a0800000000000000
+      internalID: -6666760932933269150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_84
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 495
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16add9a709a47f020800000000000000
+      internalID: 2375449312854137441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_85
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 495
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71ca3620428e31c0800000000000000
+      internalID: -4522033763802496643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_86
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 495
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767b317a2ed03b100800000000000000
+      internalID: 122456881985992551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_87
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 495
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1319b46bf6a8910800000000000000
+      internalID: 1840406226476806592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_88
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 512
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50005507b9bf11af0800000000000000
+      internalID: -427283844600365051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_89
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 399
+        width: 143
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35cc86c7eb654a70800000000000000
+      internalID: 8810566889232975164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 337
+        width: 147
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc2d4c5d623861f90800000000000000
+      internalID: -6983249969372933429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_91
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 447
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e34ef2be80bb29970800000000000000
+      internalID: 8760269872168952894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_92
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 447
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8ee852c9aef1fe0800000000000000
+      internalID: -1215995418000824157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_93
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 337
+        width: 40
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c009aa96029087680800000000000000
+      internalID: -8757239440605540340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_94
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 399
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 044d58a7aca3e31c0800000000000000
+      internalID: -4522112334520003520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_95
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 337
+        width: 71
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d522a9696f2138c80800000000000000
+      internalID: -8321786836152606115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_96
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 337
+        width: 40
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae13759b7d70e46d0800000000000000
+      internalID: -3004455278300679702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_97
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 337
+        width: 81
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b7f199bebffd310800000000000000
+      internalID: 1432140195831970675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_98
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 369
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee91456a1c05674b0800000000000000
+      internalID: -5443074306981226002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_99
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 351
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7eb564db1b10d080800000000000000
+      internalID: -9164795435357454724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287
+        width: 65
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a011e050ecfee71b0800000000000000
+      internalID: -5656820413803654902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_101
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 224
+        width: 84
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac3ee1313ac3b150800000000000000
+      internalID: 5887271450543275170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_102
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 303
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87db9ac4145749590800000000000000
+      internalID: -7668375342185595528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_103
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 319
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3574e9cf406bf6510800000000000000
+      internalID: 1544653329745725267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_104
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 305
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1430b054c101719b0800000000000000
+      internalID: -5109597538625060031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e139ad7960218de80800000000000000
+      internalID: -8153747305827495138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_106
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ab1b78907596f50800000000000000
+      internalID: 6875122004600666778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_107
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 289
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0999c2453592a5790800000000000000
+      internalID: -7540669188207240816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_108
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 289
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 108d5bbd5dd7c6300800000000000000
+      internalID: 246710437066168321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_109
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 239
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3e49cdf3e64d350800000000000000
+      internalID: 6040574220773417918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_110
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 272
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc009808322f224d0800000000000000
+      internalID: -3160697754166427443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_111
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 273
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc906c57f5d8e22a0800000000000000
+      internalID: -6760310549499213364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_112
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 159
+        width: 162
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c518119372c170d20800000000000000
+      internalID: 3244593011330482524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_113
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 257
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12a64e8b422bd680800000000000000
+      internalID: -8729345744822689249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_114
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 159
+        width: 47
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27cf2131f0762a00800000000000000
+      internalID: 731396170708928300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_115
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 159
+        width: 47
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ccd660afb580a40800000000000000
+      internalID: 5334614888028163207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_116
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 127
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8fc28a6f44b2a00800000000000000
+      internalID: 732755190552000694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_117
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 127
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eacf1eb63d8bbe010800000000000000
+      internalID: 1219271342321433774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_118
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 127
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729c85219650dda80800000000000000
+      internalID: -8440584177784927961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_119
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 95
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773b66821b7ba3dd0800000000000000
+      internalID: -2505488271163346057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_120
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 99
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033dac774f9258860800000000000000
+      internalID: 7531472081805562672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_121
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 99
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af63799944caad00800000000000000
+      internalID: 984815288920010662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_122
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 119
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb36912af13a15b80800000000000000
+      internalID: -8407759673065118789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_123
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 47
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e67752dc8e395e170800000000000000
+      internalID: 8207128524036077422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_124
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 47
+        width: 50
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8974b423df732acc0800000000000000
+      internalID: -3701334383135078504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_125
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 15
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c64d0f65e6b585030800000000000000
+      internalID: 3483634841234232428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_126
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 47
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def8973bfb2316ba0800000000000000
+      internalID: -6097536621551710227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_127
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 47
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab0d509bc8ae0850800000000000000
+      internalID: 6345194517265451950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_128
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 47
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036635aa9be8ba7f0800000000000000
+      internalID: -600229197246142928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_129
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 47
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a618261d5689460800000000000000
+      internalID: 7248655550228032136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_130
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 47
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0421201384aec7ef0800000000000000
+      internalID: -108954695182970304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_131
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 15
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88f94216e6144100800000000000000
+      internalID: 91223069859379338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_132
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 47
+        width: 34
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b392c288b6aee80800000000000000
+      internalID: -8148582343172867182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_133
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 79
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7697f6bf97215c080800000000000000
+      internalID: -9167901151324047001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_134
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 15
+        width: 19
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e33b30acf4979620800000000000000
+      internalID: 2780855107665474533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_135
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 0
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6b5a95342312a80800000000000000
+      internalID: -8493452157395814659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_136
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 18
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1b9a9580a429e10800000000000000
+      internalID: 2202904567462081007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_137
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 15
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9356d99b44be32a20800000000000000
+      internalID: 3036529254182249785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_138
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 17
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3ce6a5d6d2c8b540800000000000000
+      internalID: 5023979612295064638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_139
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 15
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e3b05e61b0d3a70800000000000000
+      internalID: 8808208639166463543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_140
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 15
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7a855486f1182e0800000000000000
+      internalID: -2125383016441665552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_141
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 15
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406d455edb4adfbb0800000000000000
+      internalID: -4900579684005915132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_142
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 271
+        width: 63
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77dacd4b1b2bb2148a4d4e1692743c08
+      internalID: 1557403835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_143
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 753
+        width: 5
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43cdc6682b218c4f9b60ea3376c4c5e
+      internalID: -1315152564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_144
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 560
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d350ff3a3cb5047a58270d482df78f
+      internalID: 419356151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSet_house_interior_v_1.0_145
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 560
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f066a1f90a8f144087830292bc9fe58
+      internalID: 1363995530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c4d35c73042caff44a83cf7bd4044d7b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TileSet_house_interior_v_1.0_0: -6882619454352841168
+      TileSet_house_interior_v_1.0_1: -2328468316726527394
+      TileSet_house_interior_v_1.0_10: 9033214155451156693
+      TileSet_house_interior_v_1.0_100: -5656820413803654902
+      TileSet_house_interior_v_1.0_101: 5887271450543275170
+      TileSet_house_interior_v_1.0_102: -7668375342185595528
+      TileSet_house_interior_v_1.0_103: 1544653329745725267
+      TileSet_house_interior_v_1.0_104: -5109597538625060031
+      TileSet_house_interior_v_1.0_105: -8153747305827495138
+      TileSet_house_interior_v_1.0_106: 6875122004600666778
+      TileSet_house_interior_v_1.0_107: -7540669188207240816
+      TileSet_house_interior_v_1.0_108: 246710437066168321
+      TileSet_house_interior_v_1.0_109: 6040574220773417918
+      TileSet_house_interior_v_1.0_11: 6952101822410056535
+      TileSet_house_interior_v_1.0_110: -3160697754166427443
+      TileSet_house_interior_v_1.0_111: -6760310549499213364
+      TileSet_house_interior_v_1.0_112: 3244593011330482524
+      TileSet_house_interior_v_1.0_113: -8729345744822689249
+      TileSet_house_interior_v_1.0_114: 731396170708928300
+      TileSet_house_interior_v_1.0_115: 5334614888028163207
+      TileSet_house_interior_v_1.0_116: 732755190552000694
+      TileSet_house_interior_v_1.0_117: 1219271342321433774
+      TileSet_house_interior_v_1.0_118: -8440584177784927961
+      TileSet_house_interior_v_1.0_119: -2505488271163346057
+      TileSet_house_interior_v_1.0_12: -1258449403989814424
+      TileSet_house_interior_v_1.0_120: 7531472081805562672
+      TileSet_house_interior_v_1.0_121: 984815288920010662
+      TileSet_house_interior_v_1.0_122: -8407759673065118789
+      TileSet_house_interior_v_1.0_123: 8207128524036077422
+      TileSet_house_interior_v_1.0_124: -3701334383135078504
+      TileSet_house_interior_v_1.0_125: 3483634841234232428
+      TileSet_house_interior_v_1.0_126: -6097536621551710227
+      TileSet_house_interior_v_1.0_127: 6345194517265451950
+      TileSet_house_interior_v_1.0_128: -600229197246142928
+      TileSet_house_interior_v_1.0_129: 7248655550228032136
+      TileSet_house_interior_v_1.0_13: -8093713490441676814
+      TileSet_house_interior_v_1.0_130: -108954695182970304
+      TileSet_house_interior_v_1.0_131: 91223069859379338
+      TileSet_house_interior_v_1.0_132: -8148582343172867182
+      TileSet_house_interior_v_1.0_133: -9167901151324047001
+      TileSet_house_interior_v_1.0_134: 2780855107665474533
+      TileSet_house_interior_v_1.0_135: -8493452157395814659
+      TileSet_house_interior_v_1.0_136: 2202904567462081007
+      TileSet_house_interior_v_1.0_137: 3036529254182249785
+      TileSet_house_interior_v_1.0_138: 5023979612295064638
+      TileSet_house_interior_v_1.0_139: 8808208639166463543
+      TileSet_house_interior_v_1.0_14: 8526320803344911311
+      TileSet_house_interior_v_1.0_140: -2125383016441665552
+      TileSet_house_interior_v_1.0_141: -4900579684005915132
+      TileSet_house_interior_v_1.0_142: 1557403835
+      TileSet_house_interior_v_1.0_143: -1315152564
+      TileSet_house_interior_v_1.0_144: 419356151
+      TileSet_house_interior_v_1.0_145: 1363995530
+      TileSet_house_interior_v_1.0_15: 1500099881297232758
+      TileSet_house_interior_v_1.0_16: 3732767847493252975
+      TileSet_house_interior_v_1.0_17: -4376089620295442714
+      TileSet_house_interior_v_1.0_18: -3846970307441852629
+      TileSet_house_interior_v_1.0_19: 1147691856359496909
+      TileSet_house_interior_v_1.0_2: 8931211936970475211
+      TileSet_house_interior_v_1.0_20: -6413520671031725150
+      TileSet_house_interior_v_1.0_21: -4196178042261114115
+      TileSet_house_interior_v_1.0_22: 3820094072073413229
+      TileSet_house_interior_v_1.0_23: 2116575269962324874
+      TileSet_house_interior_v_1.0_24: 8792018761369844699
+      TileSet_house_interior_v_1.0_25: -4205746062647765324
+      TileSet_house_interior_v_1.0_26: 5934980638420730617
+      TileSet_house_interior_v_1.0_27: 1472041144818380972
+      TileSet_house_interior_v_1.0_28: 392506150315803585
+      TileSet_house_interior_v_1.0_29: 3440139969453862393
+      TileSet_house_interior_v_1.0_3: 6601695228628587122
+      TileSet_house_interior_v_1.0_30: 6092786942130996994
+      TileSet_house_interior_v_1.0_31: 8497155773360324044
+      TileSet_house_interior_v_1.0_32: 7178981170472295784
+      TileSet_house_interior_v_1.0_33: 6161524802686177947
+      TileSet_house_interior_v_1.0_34: 4331820255784159327
+      TileSet_house_interior_v_1.0_35: -2487407176136897411
+      TileSet_house_interior_v_1.0_36: -3114738224986474540
+      TileSet_house_interior_v_1.0_37: -6651039218187628797
+      TileSet_house_interior_v_1.0_38: -4049824274599030489
+      TileSet_house_interior_v_1.0_39: 6804321572273338481
+      TileSet_house_interior_v_1.0_4: 1160596460354667851
+      TileSet_house_interior_v_1.0_40: 6262717148535452972
+      TileSet_house_interior_v_1.0_41: -6618916609272733876
+      TileSet_house_interior_v_1.0_42: -2771512997069083994
+      TileSet_house_interior_v_1.0_43: -2170408142730976625
+      TileSet_house_interior_v_1.0_44: -7590161340292454602
+      TileSet_house_interior_v_1.0_45: 1902708060676975238
+      TileSet_house_interior_v_1.0_46: 4500227830211346112
+      TileSet_house_interior_v_1.0_47: 7614772210024076118
+      TileSet_house_interior_v_1.0_48: -7921503010263953160
+      TileSet_house_interior_v_1.0_49: 7536250150949466787
+      TileSet_house_interior_v_1.0_5: 7682996845308442291
+      TileSet_house_interior_v_1.0_50: 569262739533979806
+      TileSet_house_interior_v_1.0_51: -8846764754464884094
+      TileSet_house_interior_v_1.0_52: -8373054544083907553
+      TileSet_house_interior_v_1.0_53: 7702245299808196322
+      TileSet_house_interior_v_1.0_54: -5443869735041252521
+      TileSet_house_interior_v_1.0_55: -5464610298212003128
+      TileSet_house_interior_v_1.0_56: 3493265803769300255
+      TileSet_house_interior_v_1.0_57: 312535709930489958
+      TileSet_house_interior_v_1.0_58: 8255469866422644178
+      TileSet_house_interior_v_1.0_59: 1914654887532120398
+      TileSet_house_interior_v_1.0_6: -8605858102760989662
+      TileSet_house_interior_v_1.0_60: -6085480629472887026
+      TileSet_house_interior_v_1.0_61: 6433978059507861975
+      TileSet_house_interior_v_1.0_62: 7965816904931978856
+      TileSet_house_interior_v_1.0_63: 4252398106793915885
+      TileSet_house_interior_v_1.0_64: -2297731536686069208
+      TileSet_house_interior_v_1.0_65: -7351844497338722832
+      TileSet_house_interior_v_1.0_66: 5185534498564714163
+      TileSet_house_interior_v_1.0_67: -8915891732124209484
+      TileSet_house_interior_v_1.0_68: 5334149060655320712
+      TileSet_house_interior_v_1.0_69: -6922154090159697382
+      TileSet_house_interior_v_1.0_7: -5412617293684839443
+      TileSet_house_interior_v_1.0_70: -7249980656883309466
+      TileSet_house_interior_v_1.0_71: 7351663110026671462
+      TileSet_house_interior_v_1.0_72: -7779947745893309519
+      TileSet_house_interior_v_1.0_73: -3999500583598352980
+      TileSet_house_interior_v_1.0_74: 4313927285145735940
+      TileSet_house_interior_v_1.0_75: -5712185509565169360
+      TileSet_house_interior_v_1.0_76: -5603713726766000657
+      TileSet_house_interior_v_1.0_77: -3431008277407467405
+      TileSet_house_interior_v_1.0_78: 2349728378232091465
+      TileSet_house_interior_v_1.0_79: -811264001427913683
+      TileSet_house_interior_v_1.0_8: 3628857370317062503
+      TileSet_house_interior_v_1.0_80: -8712020415320232163
+      TileSet_house_interior_v_1.0_81: -5404637836863617602
+      TileSet_house_interior_v_1.0_82: 6666874333351778056
+      TileSet_house_interior_v_1.0_83: -6666760932933269150
+      TileSet_house_interior_v_1.0_84: 2375449312854137441
+      TileSet_house_interior_v_1.0_85: -4522033763802496643
+      TileSet_house_interior_v_1.0_86: 122456881985992551
+      TileSet_house_interior_v_1.0_87: 1840406226476806592
+      TileSet_house_interior_v_1.0_88: -427283844600365051
+      TileSet_house_interior_v_1.0_89: 8810566889232975164
+      TileSet_house_interior_v_1.0_9: -2730134433268212591
+      TileSet_house_interior_v_1.0_90: -6983249969372933429
+      TileSet_house_interior_v_1.0_91: 8760269872168952894
+      TileSet_house_interior_v_1.0_92: -1215995418000824157
+      TileSet_house_interior_v_1.0_93: -8757239440605540340
+      TileSet_house_interior_v_1.0_94: -4522112334520003520
+      TileSet_house_interior_v_1.0_95: -8321786836152606115
+      TileSet_house_interior_v_1.0_96: -3004455278300679702
+      TileSet_house_interior_v_1.0_97: 1432140195831970675
+      TileSet_house_interior_v_1.0_98: -5443074306981226002
+      TileSet_house_interior_v_1.0_99: -9164795435357454724
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
